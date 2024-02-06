@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/img/logo_fialove.png" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - Výskum</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img
+                                src="/img/logo_white.svg"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 sm:block">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="min-h-screen px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                role="document"
+            >
+                <div class="grid grid-cols-1">
+                    <div class="col-span-1 space-y-10">
+                        <h2
+                            class="text-2xl font-bold leading-none tracking-tight sm:text-4xl lg:text-6xl"
+                        >
+                            Výskum
+                        </h2>
+                        <p
+                            class="sm:text-md mb-1 max-w-6xl text-sm md:text-lg lg:text-xl"
+                        >
+                            Výskum v projekte EWA mal tri hlavné časti:
+                            získavanie dát, spracovanie dát s cieľom výberu
+                            parametrov rečového prejavu a vyhodnocovanie
+                            parametrov s cieľom rozlíšiť prejavy zdravých ľudí
+                            od ľudí s kognitívnymi poruchami.
+                        </p>
+                        <div>
+                            <h3
+                                class="mb-2 flex items-end text-lg font-bold leading-none tracking-tight text-primary sm:text-xl md:text-2xl lg:text-4xl"
+                            >
+                                <span> Získavanie dát </span>
+                                <!-- <img
+                                    src="/img/icons/stats_360.png"
+                                    alt="Ikona - Statistiky"
+                                    class="ml-4 h-[40px] w-[40px] md:h-[64px] md:w-[64px]"
+                                /> -->
+                            </h3>
+                            <p
+                                class="sm:text-md mb-1 max-w-6xl text-sm md:text-lg lg:text-xl"
+                            >
+                                V spolupráci s odborníkmi z oblasti neurológie a
+                                psychológie bolo potrebné vytvoriť metodiku,
+                                ktorá sa zaoberala navrhnutím obrázkov vhodných
+                                pre tento účel, určením základných
+                                charakteristík nahrávania, kategorizácie
+                                zdravých a chorých a priebežnou optimalizáciou
+                                stanovenej metodiky. Následne sa vyvíjala
+                                intuitívna aplikácia, ktorá zbierala dáta
+                                nahrávaním rečových prejavov osôb popisujúcich
+                                obrázky.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3
+                                class="mb-2 flex items-end text-lg font-bold leading-none tracking-tight text-primary sm:text-xl md:text-2xl lg:text-4xl"
+                            >
+                                <span> Spracovanie dát </span>
+                                <img
+                                    src="/img/icons/speech_to_text_360.png"
+                                    alt="Ikona - ASR"
+                                    width="106"
+                                    height="64"
+                                    class="-mt-4 ml-4 h-[40px] w-[60px] md:h-[64px] md:w-[106px]"
+                                />
+                            </h3>
+                            <p
+                                class="sm:text-md mb-1 max-w-6xl text-sm md:text-lg lg:text-xl"
+                            >
+                                V spontánnej reči sa objavujú okrem slov aj iné
+                                zvukové prejavy ako smiech, hmkanie, kašlanie,
+                                pauzy a pod. Anotácia znamená ručný prepis
+                                hlasového prejavu do textu s vyznačením týchto
+                                sprievodných zvukových prejavov. Anotácie sú
+                                jednou z fáz pri príprave nástroja umelej
+                                inteligencie pre prevod reči do textu – ASR
+                                (Automatic Speech Recognition). Následne boli
+                                rečové prejavy podrobené akustickej analýze,
+                                ktorá vyťažila zo zvukových záznamov stovky
+                                parametrov ako dĺžka, hlasitosť, rôzne druhy
+                                frekvencií, farba hlasu a iné. Z lingvistickej
+                                analýzy sa určili tzv. NLP (Natural Language
+                                Processing) parametre ako počty plnovýznamových
+                                slov, rôznych slovných druhov, rôzne lexikálne a
+                                sémantické parametre.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3
+                                class="mb-2 flex items-end text-lg font-bold leading-none tracking-tight text-primary sm:text-xl md:text-2xl lg:text-4xl"
+                            >
+                                <span> Vyhodnocovanie parametrov </span>
+                                <img
+                                    src="/img/icons/bulb_360.png"
+                                    alt="Ikona - ASR"
+                                    class="-mt-4 ml-4 h-[40px] w-[40px] rotate-[30deg] md:h-[64px] md:w-[64px]"
+                                />
+                            </h3>
+                            <p
+                                class="sm:text-md mb-1 max-w-6xl text-sm md:text-lg lg:text-xl"
+                            >
+                                Z jednej nahrávky, ktorá obsahovala popis 65
+                                obrázkov, teda 65 rozličných rečových prejavov
+                                vzniklo vyše 100 000 parametrov, ktoré boli
+                                použité v rôznych metódach počítačových
+                                algoritmov a umelej inteligencie ako lineárna
+                                regresia, Random Forest a neurónové siete.
+                                Pomocou týchto metód s vedomím toho, či išlo o
+                                nahrávku človeka zdravého alebo s diagnózou sa
+                                dosiahla schopnosť počítača rozlíšiť s vysokou
+                                pravdepodobnosťou o akú nahrávku ide. Ďalším
+                                výsledkom výskumu boli zaujímavé štatistické
+                                charakteristiky.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-[284px] rounded-full bg-primary md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-[#152036] py-6 md:py-10 2xl:py-12">
+                    <ul
+                        role="menu"
+                        class="grid grid-cols-4 gap-y-4 px-10 text-center sm:gap-y-6 sm:px-32 md:flex md:justify-center md:space-x-8 md:px-0"
+                    >
+                        <li role="presentation">
+                            <a role="menuitem" href="/" class="text-light-gray">
+                                Domov
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/tim.html"
+                                class="text-light-gray"
+                            >
+                                Tím
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/veda.html"
+                                class="text-light-gray"
+                            >
+                                Veda
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/gdpr.html"
+                                class="text-light-gray"
+                            >
+                                GDPR
+                            </a>
+                        </li>
+                        <li role="presentation" class="col-span-4">
+                            <a
+                                role="menuitem"
+                                href="/footer/zasady.html"
+                                class="text-light-gray"
+                            >
+                                Zásady ochrany osobných údajov
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            var burgerMenu = document.getElementById("burger-menu");
+            var mobileMenu = document.getElementById("mobile-menu");
+
+            burgerMenu.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+                burgerMenu.classList.toggle("close");
+            });
+        </script>
+    </body>
+</html>

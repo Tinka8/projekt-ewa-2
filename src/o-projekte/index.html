@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/img/logo_fialove.png" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - O projekte</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img
+                                src="/img/logo_white.svg"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 sm:block">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                role="document"
+            >
+                <div class="grid grid-cols-1">
+                    <div class="col-span-1 space-y-10">
+                        <h2
+                            class="text-2xl font-bold leading-none tracking-tight sm:text-4xl lg:text-6xl"
+                        >
+                            O projekte
+                            <!-- Add missing image here -->
+                        </h2>
+
+                        <ul
+                            class="sm:text-md list-disc pl-10 text-sm font-bold text-primary md:text-lg lg:text-xl"
+                        >
+                            <li>
+                                <p>
+                                    Neurodegeneratívne ochorenia ako
+                                    Alzheimerova a Parkinsonova choroba sú
+                                    globálnou zdravotnou, ekonomickou a
+                                    sociálnou hrozbou. Odhaduje sa, že až vyše
+                                    40 miliónov ľudí na svete a vyše 60 tisíc na
+                                    Slovensku žije s Alzheimerovou chorobou a
+                                    zviazanými poruchami – najbežnejšou triedou
+                                    neurodegeneratívnych ochorení. Očakáva sa,
+                                    že toto číslo v nasledujúcich rokoch a
+                                    dekádach dramaticky porastie. Na tieto
+                                    choroby zatiaľ neexistujú liečebné terapie a
+                                    tiež základné mechanizmy vzniku týchto
+                                    ochorení zostávajú väčšinou neznáme.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p class="sm:text-md text-sm md:text-lg lg:text-xl">
+                            Príznaky neurodegeneratívnych ochorení sa prejavujú
+                            aj v spôsobe a kvalite rečového prejavu postihnutého
+                            človeka. Klesá slovná zásoba, reč je pomalšia a
+                            menej významová, tzv. prázdna. Preto AXON PRO
+                            zrealizoval inovatívny projekt, ktorého cieľom bolo
+                            prostredníctvom analýzy rečových prejavov zistiť, či
+                            sa u jedinca nachádzajú príznaky uvedených ochorení.
+                            Vyvinuli sme mobilnú aplikáciu, ktorá hravou formou
+                            navedie človeka aby popísal obrázky, ktoré na
+                            telefóne uvidí. Samozrejme, na tento účel sa počíta
+                            s použitím moderných smartfónov, ktoré však už dnes
+                            vlastnia aj starší ľudia, prípadne sa môže použiť
+                            mobil mladších príbuzných, či známych.
+                        </p>
+
+                        <ul
+                            class="sm:text-md list-disc pl-10 text-sm font-bold text-primary md:text-lg lg:text-xl"
+                        >
+                            <li>
+                                <p>
+                                    Ide o interdisciplinárny výskumný a vývojový
+                                    projekt, ktorý integruje do jednej aplikácie
+                                    odborné znalosti psychológov, neurológov a
+                                    viacerých profesií IT špecialistov.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <article>
+                            <h3
+                                class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-4xl"
+                            >
+                                Výskum
+                            </h3>
+                            <!-- <p
+                                class="sm:text-md mb-1 text-sm md:text-lg lg:text-xl"
+                            >
+                                Anotácia znamená prepis hlasového prejavu do
+                                textu s vyznačením sprievodných zvukových
+                                prejavov ako sú napriklad smiech, hmkanie,
+                                kašlanie, pauza a pod.
+                            </p> -->
+                            <a
+                                href="/o-projekte/vyskum.html"
+                                class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                >čitaj viac&hellip;</a
+                            >
+                        </article>
+
+                        <article>
+                            <h3
+                                class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-4xl"
+                            >
+                                Média
+                            </h3>
+                            <!-- <p
+                                class="sm:text-md mb-1 text-sm md:text-lg lg:text-xl"
+                            >
+                                Anotácia znamená prepis hlasového prejavu do
+                                textu s vyznačením sprievodných zvukových
+                                prejavov ako sú napriklad smiech, hmkanie,
+                                kašlanie, pauza a pod.
+                            </p> -->
+                            <a
+                                href="/o-projekte/media.html"
+                                class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                >čitaj viac&hellip;</a
+                            >
+                        </article>
+
+                        <article>
+                            <h3
+                                class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-4xl"
+                            >
+                                Tím
+                            </h3>
+                            <!-- <p
+                                class="sm:text-md mb-1 text-sm md:text-lg lg:text-xl"
+                            >
+                                Anotácia znamená prepis hlasového prejavu do
+                                textu s vyznačením sprievodných zvukových
+                                prejavov ako sú napriklad smiech, hmkanie,
+                                kašlanie, pauza a pod.
+                            </p> -->
+                            <a
+                                href="/o-projekte/tim.html"
+                                class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                >čitaj viac&hellip;</a
+                            >
+                        </article>
+                    </div>
+                </div>
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-[284px] rounded-full bg-primary md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-[#152036] py-6 md:py-10 2xl:py-12">
+                    <ul
+                        role="menu"
+                        class="grid grid-cols-4 gap-y-4 px-10 text-center sm:gap-y-6 sm:px-32 md:flex md:justify-center md:space-x-8 md:px-0"
+                    >
+                        <li role="presentation">
+                            <a role="menuitem" href="/" class="text-light-gray">
+                                Domov
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/tim.html"
+                                class="text-light-gray"
+                            >
+                                Tím
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/veda.html"
+                                class="text-light-gray"
+                            >
+                                Veda
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/gdpr.html"
+                                class="text-light-gray"
+                            >
+                                GDPR
+                            </a>
+                        </li>
+                        <li role="presentation" class="col-span-4">
+                            <a
+                                role="menuitem"
+                                href="/footer/zasady.html"
+                                class="text-light-gray"
+                            >
+                                Zásady ochrany osobných údajov
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            var burgerMenu = document.getElementById("burger-menu");
+            var mobileMenu = document.getElementById("mobile-menu");
+
+            burgerMenu.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+                burgerMenu.classList.toggle("close");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/img/logo_fialove.png" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - Podpora</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img
+                                src="/img/logo_white.svg"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 sm:block">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                role="document"
+            >
+                <div class="space-y-8">
+                    <h2
+                        class="text-2xl font-bold leading-none tracking-tight text-primary sm:text-4xl lg:text-6xl"
+                    >
+                        Podpora mentálneho zdravia
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 lg:space-x-20">
+                        <div class="space-y-4">
+                            <ul
+                                class="list-disc pl-10 text-xl font-bold text-primary"
+                            >
+                                <li>Čítanie kníh</li>
+                            </ul>
+
+                            <p class="mb-1 max-w-3xl">
+                                Zlepšuje sa slovná zásoba, upokojuje a
+                                koncentruje, podporuje fantáziu a predstavivosť.
+                            </p>
+
+                            <article>
+                                <ul
+                                    class="list-disc pl-10 text-xl font-bold text-primary"
+                                >
+                                    <li>Pohyb</li>
+                                </ul>
+                                <p class="mb-1 max-w-3xl">
+                                    Pravidelný pohyb bráni poklesu mentálnych
+                                    schopností. Chôdza, beh, turistika,
+                                    plávanie, tancovanie, lyžovanie a samozrejme
+                                    všetky pohybové aktivity zvyšujú tep srdca,
+                                    prietok krvi do celého tela, aj do mozgu.
+                                    Majú tak okamžitý pozitívny dopad na náladu,
+                                    posilňujú pozornosť a zlepšujú mentálne
+                                    funkcie.
+                                </p>
+                            </br>
+                                <p class="mb-1 max-w-3xl">
+                                    Dokáže fyzická aktivita zmierniť ochorenia
+                                    mozgu?
+                                </p>
+                                <a
+                                    href="https://uzitocna.pravda.sk/seniori/clanok/517380-dokaze-fyzicka-aktivita-zmiernit-
+                                    ochorenia-mozgu/"
+                                    class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >čitaj viac&hellip;</a
+                                >
+                            </br>
+                            </br>
+                                <p class="mb-1 max-w-3xl">
+                                    Vplyv fyzickej (ne)aktivity na zdravie človeka
+                                </p>
+                                <a
+                                    href="https://vedanadosah.cvtisr.sk/zdravie/vplyv-fyzickej-neaktivity-na-zdravie-cloveka/"
+                                    class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >čitaj viac&hellip;</a
+                                >
+                            </article>
+
+                            <article>
+                                <ul
+                                    class="list-disc pl-10 text-xl font-bold text-primary"
+                                >
+                                    <li>Strava</li>
+                                </ul>
+                                <p class="mb-1 max-w-3xl">
+                                    Na všetky procesy, ktoré sa odohrávajú v ľudskom mozgu je potrebná energia a výživa. Ak
+                                    chceme, aby náš mozog podával výkon, mala by byť strava vyvážená správnym pomerom
+                                    bielkovín, sacharidov, tukov, minerálov, vitamínov a primeraným pitným režimom.
+                                </p>
+                            </br>
+                                <p class="mb-1 max-w-3xl">
+                                    Vhodná strava môže znížiť riziko demencie o
+                                    štvrtinu
+                                </p>
+                                <a
+                                    href="https://zdravie.noviny.sk/zdravie-a-zivotny-styl/770134-stredomorska-strava-moze-znizit-riziko-demencie-o-stvrtinu-zistila-studia"
+                                    target="_blank"
+                                    class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >čitaj viac&hellip;</a
+                                >
+                            </br>
+                            </br>
+                                <p class="mb-1 max-w-3xl">
+                                    11 potravín pre zlepšenie funkcie mozgu
+                                </p>
+                                <a
+                                    href="https://www.brainmarket.sk/blog/11-potravin-pre-zlepsenie-funkcie-mozgu/"
+                                    class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >čitaj viac&hellip;</a
+                                >
+                            </article>
+                        </div>
+
+                        <div class="space-y-4">
+                            <article>
+                                <ul
+                                    class="list-disc pl-10 text-xl font-bold text-primary"
+                                >
+                                    <li>Spánok a oddych</li>
+                                </ul>
+                                <!-- <p class="mb-1 max-w-3xl">
+                                    Spánok v priebehu rokov
+                                </p> -->
+                                <a
+                                    href="https://www.scanquilt.sk/blog/spanok-v-priebehu-rokov-seniori/"
+                                    target="_blank"
+                                    class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >čitaj viac&hellip;</a
+                                >
+                            </article>
+                            <!-- <article>
+                                <ul
+                                    class="list-disc pl-10 text-xl font-bold text-primary"
+                                >
+                                    <li>Spoznávanie nového</li>
+                                </ul>
+                                <p class="mb-1 max-w-3xl">
+                                    Univerzita Komenského v Bratislave ponúka
+                                    ľuďom starším ako 50 rokov, ktorí majú
+                                    ukončené úplné stredoškolské vzdelanie s
+                                    maturitou ďalšie vzdelanie. Univerzita
+                                    "Tretieho Veku"
+                                </p>
+                                <a
+                                    href="https://cdv.uniba.sk/utv/"
+                                    target="_blank"
+                                    class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >čitaj viac&hellip;</a
+                                >
+                            </article> -->
+
+                            <ul
+                                class="list-disc pl-10 text-xl font-bold text-primary"
+                            >
+                                <li>Socializácia a spoločenské aktivity</li>
+                            </ul>
+
+                            <p class="mb-1 max-w-3xl">
+                                Významný vplyv pri podpore mentálneho zdravia má
+                                udržavanie čo najširších sociálnych kontaktov.
+                            </p>
+
+                            <ul class="pl-10 text-xl">
+                                <li>Seniorské kluby:</li>
+                            </ul>
+
+                            <ol class="pl-10">
+                                <li>
+                                    <a
+                                        href="https://www.aksen.sk/"
+                                        class="text-black"
+                                        >https://www.aksen.sk/</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://klubluna.sk/"
+                                        class="text-black"
+                                        >https://klubluna.sk/</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.petrzalka.sk/klubovna/"
+                                        class="text-black"
+                                        >https://www.petrzalka.sk/klubovna/</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://seniorivpohybe.sk/"
+                                        class="text-black"
+                                        >https://seniorivpohybe.sk/</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.staledobri.sk/"
+                                        class="text-black"
+                                        >https://www.staledobri.sk/</a
+                                    >
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+                <br />
+                <br />
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-[284px] rounded-full bg-primary md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-[#152036] py-6 md:py-10 2xl:py-12">
+                    <ul
+                        role="menu"
+                        class="grid grid-cols-4 gap-y-4 px-10 text-center sm:gap-y-6 sm:px-32 md:flex md:justify-center md:space-x-8 md:px-0"
+                    >
+                        <li role="presentation">
+                            <a role="menuitem" href="/" class="text-light-gray">
+                                Domov
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/tim.html"
+                                class="text-light-gray"
+                            >
+                                Tím
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/veda.html"
+                                class="text-light-gray"
+                            >
+                                Veda
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/gdpr.html"
+                                class="text-light-gray"
+                            >
+                                GDPR
+                            </a>
+                        </li>
+                        <li role="presentation" class="col-span-4">
+                            <a
+                                role="menuitem"
+                                href="/footer/zasady.html"
+                                class="text-light-gray"
+                            >
+                                Zásady ochrany osobných údajov
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            var burgerMenu = document.getElementById("burger-menu");
+            var mobileMenu = document.getElementById("mobile-menu");
+
+            burgerMenu.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+                burgerMenu.classList.toggle("close");
+            });
+        </script>
+    </body>
+</html>

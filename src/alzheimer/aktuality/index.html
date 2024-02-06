@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/img/logo_fialove.png" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - Aktuality</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img
+                                src="/img/logo_white.svg"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 sm:block">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="px-[20px] pb-[60px] pt-[100px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                role="document"
+            >
+                <div class="space-y-6">
+                    <h2
+                        class="text-2xl font-bold leading-none tracking-tight text-primary sm:text-4xl lg:text-6xl"
+                    >
+                        Aktuality a zaujímavosti
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 items-center gap-20 lg:h-[500px] lg:grid-cols-3 xl:gap-0"
+                    >
+                        <div class="text-center">
+                            <a
+                                href="/alzheimer/aktuality/novinky.html"
+                                class="space-y-4"
+                            >
+                                <span>
+                                    <img
+                                        src="/img/alzheimer/novinky.png"
+                                        alt="Novinky"
+                                        class="mx-auto box-content h-[100px] w-[100px] rounded-3xl border-[50px] border-secondary bg-secondary object-contain object-center sm:h-[200px] sm:w-[200px]"
+                                    />
+                                </span>
+                                <p class="text-lg font-bold text-black">
+                                    Novinky
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="#" class="space-y-4">
+                                <span>
+                                    <img
+                                        src="/img/alzheimer/zvuk.png"
+                                        alt="Zvuk"
+                                        class="mx-auto box-content h-[100px] w-[100px] rounded-3xl border-[50px] border-secondary bg-secondary object-contain object-center sm:h-[200px] sm:w-[200px]"
+                                    />
+                                </span>
+                                <p class="text-lg font-bold text-black">
+                                    Podkasty a rozhovory
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="text-center">
+                            <a
+                                href="/alzheimer/aktuality/publikacie.html"
+                                class="space-y-4"
+                            >
+                                <span>
+                                    <img
+                                        src="/img/alzheimer/kniha.png"
+                                        alt="Kniha"
+                                        class="mx-auto box-content h-[100px] w-[100px] rounded-3xl border-[50px] border-secondary bg-secondary object-contain object-center sm:h-[200px] sm:w-[200px]"
+                                    />
+                                </span>
+                                <p class="text-lg font-bold text-black">
+                                    Publikácie
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-[284px] rounded-full bg-primary md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-[#152036] py-6 md:py-10 2xl:py-12">
+                    <ul
+                        role="menu"
+                        class="grid grid-cols-4 gap-y-4 px-10 text-center sm:gap-y-6 sm:px-32 md:flex md:justify-center md:space-x-8 md:px-0"
+                    >
+                        <li role="presentation">
+                            <a role="menuitem" href="/" class="text-light-gray">
+                                Domov
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/tim.html"
+                                class="text-light-gray"
+                            >
+                                Tím
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/veda.html"
+                                class="text-light-gray"
+                            >
+                                Veda
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/gdpr.html"
+                                class="text-light-gray"
+                            >
+                                GDPR
+                            </a>
+                        </li>
+                        <li role="presentation" class="col-span-4">
+                            <a
+                                role="menuitem"
+                                href="/footer/zasady.html"
+                                class="text-light-gray"
+                            >
+                                Zásady ochrany osobných údajov
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            var burgerMenu = document.getElementById("burger-menu");
+            var mobileMenu = document.getElementById("mobile-menu");
+
+            burgerMenu.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+                burgerMenu.classList.toggle("close");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="sk">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/img/logo_fialove.png" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - GDPR</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 sm:flex flex-grow-0 justify-between bg-primary text-secondary sm:px-[20px] lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img 
+                                src="/img/logo_white.svg" 
+                                alt="Projekt EWA - Logo biele"
+                                class="w-[70px] h-[60px] md:w-[90px] lg:w-[130px] lg:h-[84px]" 
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Navigation -->
+                <nav class="flex-grow-0 hidden sm:block">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/o-projekte/index.html"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/aplikacia.html"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/alzheimer/index.html"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/kontakt.html"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            
+                <!-- Mobile navigation -->
+                <nav class="flex-grow-0 hidden sm:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/o-projekte/index.html"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/aplikacia.html"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/alzheimer/index.html"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/kontakt.html"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main 
+                class="px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]" 
+                role="document"
+            >
+                <div class="grid grid-cols-1">
+                    <p class="min-h-screen">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel rhoncus orci. Pellentesque porttitor convallis magna,
+                        vel sodales erat eleifend et. Quisque fermentum mi dui, sit amet fermentum urna imperdiet viverra. Integer pulvinar
+                        consectetur accumsan. Aenean lorem dui, interdum a accumsan placerat, varius at sem. Praesent rhoncus volutpat nisi, a
+                        finibus diam gravida eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed
+                        quis diam neque. Phasellus auctor quis mauris ac vulputate. Fusce a nisi sed libero sagittis condimentum et eu sem. In
+                        vehicula imperdiet magna vitae imperdiet. Fusce placerat dolor at nunc bibendum luctus.
+                        
+                        Sed eu nisl ut metus rhoncus elementum ac sit amet mi. Nam id velit tortor. Cras varius turpis nibh, quis finibus ligula
+                        congue sit amet. Suspendisse condimentum fermentum nulla sit amet posuere. Fusce ultricies porttitor tincidunt.
+                        Pellentesque ac ex sit amet ligula ultricies volutpat. Aliquam vel dapibus felis. Fusce sed justo non leo auctor
+                        viverra. Vivamus vestibulum enim sit amet risus condimentum vestibulum. Nulla consequat arcu neque, quis euismod metus
+                        suscipit et. Curabitur pretium orci in augue dictum, a pharetra velit vulputate. Morbi est odio, tempus ac tristique a,
+                        faucibus vel lacus. Cras semper ante tortor, quis porta massa vestibulum a. Nullam convallis, tortor nec fermentum
+                        egestas, nisl elit elementum ante, et viverra arcu lectus vitae augue. Quisque sollicitudin vitae sapien vitae
+                        porttitor.
+                        
+                        Curabitur fringilla est purus, vel egestas metus rhoncus sed. Etiam suscipit aliquam elit, non condimentum dolor
+                        convallis mollis. Fusce scelerisque massa eget felis egestas, nec vehicula orci eleifend. Pellentesque aliquam pulvinar
+                        augue, vitae vehicula nisi sodales non. Ut sodales enim commodo leo convallis sollicitudin. Etiam ut quam a elit
+                        placerat gravida a in enim. Aliquam erat volutpat. Aliquam nisl ipsum, porttitor blandit ex ut, ullamcorper porta purus.
+                        
+                        Ut quis fringilla turpis. Nunc molestie leo posuere orci condimentum, nec convallis erat lobortis. Pellentesque
+                        imperdiet dui tortor, nec feugiat eros maximus at. Aliquam euismod fringilla tortor, nec suscipit dui bibendum non. Sed
+                        vitae pharetra velit, a ultricies nibh. Donec mauris mi, ullamcorper eget elementum id, fringilla sed magna. Donec elit
+                        sapien, bibendum id egestas ac, viverra id risus. Phasellus blandit vehicula arcu eget malesuada. Duis ut dolor et dolor
+                        facilisis hendrerit. Proin nec purus sit amet risus pretium lacinia. Morbi vel consectetur odio. Mauris suscipit mollis
+                        tellus, ultrices sollicitudin tortor porttitor eget.
+                        
+                        Duis in lacinia massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec nec
+                        felis sagittis justo interdum luctus quis ac felis. Sed cursus molestie augue, at commodo mi. Fusce ac dolor in ligula
+                        porttitor semper eu vel ligula. Mauris sed tincidunt neque. Donec dignissim, risus quis fringilla lacinia, lorem lectus
+                        porttitor dui, quis rutrum erat odio in leo. Curabitur vel dictum velit. Nunc varius erat est. Phasellus quis aliquet
+                        ex. Quisque euismod a erat at volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam lectus in
+                        orci ornare, vitae vehicula massa finibus. Proin dictum cursus urna, non efficitur magna ultrices ac. Maecenas congue
+                        volutpat pulvinar.
+                    </p>
+                </div>
+            </main>
+            
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div class="bg-primary w-[284px] h-[10px] rounded-full md:h-[15px]"></div>
+                </div>
+                <div class="bg-[#152036] w-full py-6 md:py-10 2xl:py-12">
+                    <ul role="menu"
+                        class="grid grid-cols-4 gap-y-4 px-10 text-center sm:px-32 sm:gap-y-6 md:px-0 md:flex md:justify-center md:space-x-8"
+                    >
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/" 
+                                class="text-light-gray"
+                            >
+                                Domov
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/o-projekte/tim.html" 
+                                class="text-light-gray"
+                            >
+                                Tím
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/footer/veda.html" 
+                                class="text-light-gray"
+                            >
+                                Veda
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/footer/gdpr.html" 
+                                class="text-light-gray"
+                            >
+                                GDPR
+                            </a>
+                        </li>
+                        <li role="presentation" class="col-span-4">
+                            <a 
+                                role="menuitem" 
+                                href="/footer/zasady.html" 
+                                class="text-light-gray"
+                            >
+                                Zásady ochrany osobných údajov
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            var burgerMenu = document.getElementById('burger-menu');
+            var mobileMenu = document.getElementById('mobile-menu');
+
+            burgerMenu.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+                burgerMenu.classList.toggle('close');
+            });
+        </script>
+    </body>
+</html>

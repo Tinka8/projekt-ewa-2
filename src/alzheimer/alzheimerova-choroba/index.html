@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/img/logo_fialove.png" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - Alzheimerova choroba</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img
+                                src="/img/logo_white.svg"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 sm:block">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                role="document"
+            >
+                <div class="space-y-8">
+                    <h2
+                        class="text-2xl font-bold leading-none tracking-tight text-primary sm:text-4xl lg:text-6xl"
+                    >
+                        Alzheimerova choroba
+                    </h2>
+                    <p class="sm:text-md text-sm md:text-lg lg:text-xl">
+                        Alzheimerova choroba začína pomaly a nenápadne, postupne
+                        sa k prvým prejavom pridružujú ďalšie. Zmeny spôsobené
+                        ochorením zasahujú do všetkých oblasti života a zásadne
+                        ovplyvňujú celú osobnosť človeka.
+                    </p>
+                    <h3
+                        class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-3xl"
+                    >
+                        Hlavné oblasti prejavov ochorenia
+                    </h3>
+                    <ul
+                        class="sm:text-md list-disc pl-10 text-sm font-bold text-primary md:text-lg lg:text-xl"
+                    >
+                        <li>
+                            <p>Zhoršené zapamätanie si nových informácii</p>
+                        </li>
+                        <li>
+                            <p>
+                                Problém spomenúť si na správne slová
+                                (nahrádzanie inými)
+                            </p>
+                        </li>
+                        <li>
+                            <p>Zmeny vo vyjadrovaní</p>
+                        </li>
+                        <li>
+                            <p>Nedokončovanie viet, myšlienok</p>
+                        </li>
+                        <li>
+                            <p>Opakovanie slov</p>
+                        </li>
+                        <li>
+                            <p>Problém orientovať sa v priestore a čase</p>
+                        </li>
+                    </ul>
+
+                    <article>
+                        <h3
+                            class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-4xl"
+                        >
+                            Život s Alzheimerovou chorobou
+                        </h3>
+                        <ol
+                            class="sm:text-md mb-1 max-w-3xl list-inside list-decimal text-sm md:text-lg lg:text-xl"
+                        >
+                            <li>
+                                <a
+                                    href="https://www.novinky.cz/clanek/koktejl-ve-francii-je-vesnice-jen-pro-lidi-s-alzheimerovou-chorobou-40433663"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Vo Francúzsku vytvorili dedinku, kde žijú
+                                    len ľudia s Alzheimerovou chorobou
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.novinky.cz/clanek/zena-zdravi-alzheimerovu-chorobu-zene-diagnostikovali-jiz-v-56-letech-podobnych-pripadu-pribyva-40426782"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Pani Carle diagnostikovali Alzheimerovu
+                                    chorobu už vo veku 56 rokov
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.ceskatelevize.cz/porady/12161203343-zivot-s-alzheimerem/"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Príbehy ľudí s Alzheimerovou chorobou,
+                                    najmladší mal 46 rokov
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.ted.com/talks/alanna_shaikh_how_i_m_preparing_to_get_alzheimer_s/transcript?language=sk"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Expertka na globálne zdravie a členka TED
+                                    Alanna Shaikh rozprávala o svojom otcovi..
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/watch?v=cLX_Qcrioss&t=27s"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Ako komunikovať s pacientom s Alzheimerovou
+                                    chorobou. Doktorka Pavla získava informácie
+                                    od pacienta
+                                </a>
+                            </li>
+                        </ol>
+                        <!-- Add missing page -->
+                        <!-- <a
+                            href="#"
+                            class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                            >čitaj viac&hellip;</a
+                        > -->
+                    </article>
+
+                    <article>
+                        <h3
+                            class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-4xl"
+                        >
+                            Podpora mentálneho zdravia
+                        </h3>
+                        <p
+                            class="sm:text-md mb-1 text-sm md:text-lg lg:text-xl"
+                        >
+                            Človek s Alzheimerovou chorobou je vystavený prudkým
+                            zmenám nálad, od nepriateľských prejavov, cez plač
+                            až po agresivitu, môže byť podozrievavý až
+                            paranoidný. Stráca záujem o spoločenské aktivity,
+                            prepadne pasivite a preto potrebuje nové stimuly a
+                            podnety.
+                        </p>
+                        <a
+                            href="/alzheimer/alzheimerova-choroba/podpora.html"
+                            class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                            >čitaj viac&hellip;</a
+                        >
+                    </article>
+
+                    <article>
+                        <h3
+                            class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-4xl"
+                        >
+                            Precvičenie mentálneho zdravia
+                        </h3>
+                        <p
+                            class="sm:text-md mb-1 text-sm md:text-lg lg:text-xl"
+                        >
+                            Lieky môžu pomôcť dočasne zmierniť príznaky, ale
+                            nedokážu chorobu odstrániť. Ochorenie je
+                            neliečiteľné, preto je dôležitá včasná diagnostika,
+                            prevencia a tréning mentálneho zdravia.
+                        </p>
+                        <a
+                            href="/alzheimer/alzheimerova-choroba/precvicenie.html"
+                            class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                            >čitaj viac&hellip;</a
+                        >
+                    </article>
+                </div>
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-[284px] rounded-full bg-primary md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-[#152036] py-6 md:py-10 2xl:py-12">
+                    <ul
+                        role="menu"
+                        class="grid grid-cols-4 gap-y-4 px-10 text-center sm:gap-y-6 sm:px-32 md:flex md:justify-center md:space-x-8 md:px-0"
+                    >
+                        <li role="presentation">
+                            <a role="menuitem" href="/" class="text-light-gray">
+                                Domov
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/tim.html"
+                                class="text-light-gray"
+                            >
+                                Tím
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/veda.html"
+                                class="text-light-gray"
+                            >
+                                Veda
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/footer/gdpr.html"
+                                class="text-light-gray"
+                            >
+                                GDPR
+                            </a>
+                        </li>
+                        <li role="presentation" class="col-span-4">
+                            <a
+                                role="menuitem"
+                                href="/footer/zasady.html"
+                                class="text-light-gray"
+                            >
+                                Zásady ochrany osobných údajov
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            var burgerMenu = document.getElementById("burger-menu");
+            var mobileMenu = document.getElementById("mobile-menu");
+
+            burgerMenu.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+                burgerMenu.classList.toggle("close");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+node_modules/
+public/
+dist/
+.vscode/
+.husky/
+package*.json
+yarn.lock
+vite.config.js
+postcss.config.cjs
+tailwind.config.cjs
