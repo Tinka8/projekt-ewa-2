@@ -12,7 +12,7 @@
     <body>
         <div class="wrapper overflow-hidden">
             <header
-                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] md:px-[40px] lg:px-[60px]"
             >
                 <!-- Logo -->
                 <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
@@ -126,46 +126,52 @@
 
             <!-- Content -->
             <main
-                class="px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                class="px-[20px] pb-[40px] pt-[100px] md:px-[40px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
                 role="document"
             >
-                <div class="space-y-6">
+                <div class="space-y-4">
                     <h2
-                        class="text-2xl font-bold leading-none tracking-tight sm:text-4xl lg:text-6xl"
+                        class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl"
                     >
                         Mobilné aplikácie EWA projektu
                     </h2>
                     <h3
-                        class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-3xl"
+                        class="font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-3xl"
                     >
                         Aplikácia pre verejnosť
                     </h3>
-                    <div class="pb-8 pt-4">
+                    <div class="pb-8 md:pt-4">
                         <div
                             class="h-[1px] w-full rounded-full bg-gray-200"
                         ></div>
                     </div>
+                </div>
+
+                <div class="space-y-6">
                     <a
                         href="https://play.google.com/store/apps/details?id=sk.axonpro.ewa"
                         class="border-b border-dotted border-secondary text-lg font-bold leading-none tracking-tight sm:text-xl lg:text-2xl"
                         >Aplikáciu pre OS Android si môžete stiahnuť tu</a
                     >
-                    <p class="sm:text-md text-sm md:text-lg">
+                    <p class="text-sm md:text-lg">
                         Test pozostáva z pomenovania a popisu obrázkov, ktoré sa
                         užívateľovi ukazujú na mobilnom zariadení. Po ukončení
                         testu príde užívateľovi oznámenie o výsledku.
                     </p>
                     <div class="flex items-center">
                         <p
-                            class="my-6 max-w-[40em] rounded-l-sm border-l-4 border-secondary py-4 pl-4 text-base font-bold tracking-tight md:text-lg lg:text-xl"
+                            class="my-6 max-w-[40em] rounded-l-sm border-l-4 border-secondary py-4 pl-4 text-sm font-semibold tracking-tight md:text-lg"
                         >
                             Aplikácia ponúka možnosť zistiť aktuálny stav
                             kognitívnych schopností užívateľa a taktiež sa
                             zapojiť do dlhodobejšieho sledovania.
                         </p>
                     </div>
+                </div>
+
+                <div class="pb-14 pt-6">
                     <div
-                        class="grid grid-cols-3 gap-x-6 sm:grid-cols-4 lg:grid-cols-6"
+                        class="grid grid-cols-3 gap-1 sm:grid-cols-4 sm:gap-2 lg:grid-cols-6 xl:gap-4"
                     >
                         <img
                             src="/img/aplikacia/1.png"
@@ -192,24 +198,21 @@
                             alt="Vizuál aplikácie 5"
                             class="cursor-pointer transition duration-500 hover:scale-110"
                         />
-                        <!-- <img  -->
-                        <!-- src="/img/aplikacia/6.png"  -->
-                        <!-- alt="Vizuál aplikácie 6" -->
-                        <!-- class="hover:scale-110 transition duration-500 cursor-pointer"  -->
-                        <!-- />  -->
                     </div>
-                    <h3
+                </div>
+
+                <div class="space-y-6 py-6">
+                    <h4
                         class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-3xl"
                     >
                         Aplikácia pre iOS
-                    </h3>
-
-                    <div class="pb-8 pt-4">
+                    </h4>
+                    <div class="pb-6 md:pb-8 md:pt-4">
                         <div
                             class="h-[1px] w-full rounded-full bg-gray-200"
                         ></div>
                     </div>
-                    <p class="lg:text-md text-sm md:text-lg">
+                    <p class="text-sm md:text-lg">
                         Aplikáciu pre iOS si môžete po dohode s AXON PRO
                         vyžiadať cez
                         <span class="border-b border-dotted border-secondary">
@@ -218,24 +221,27 @@
                             > </span
                         >.
                     </p>
-                    <h3
+                </div>
+
+                <div class="space-y-6 py-6">
+                    <h4
                         class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-3xl"
                     >
                         Aplikácia pre výskumné účely
-                    </h3>
-                    <div class="pb-8 pt-4">
+                    </h4>
+                    <div class="pb-6 md:pb-8 md:pt-4">
                         <div
                             class="h-[1px] w-full rounded-full bg-gray-200"
                         ></div>
                     </div>
-                    <p class="lg:text-md text-sm md:text-lg">
+                    <p class="text-sm md:text-lg">
                         Pre potreby výskumu vznikla aplikácia určená na
                         zaznamenávanie anamnestických údajov a nahrávanie
                         rečových prejavov. Aplikácia umožňovala zadať všetky
                         potrebné údaje pre výskum:
                     </p>
                     <ul
-                        class="lg:text-md list-inside list-disc pb-0 text-sm marker:text-secondary sm:pb-4 md:text-lg"
+                        class="lg:text-md list-inside list-disc space-y-1 pb-0 text-sm marker:text-secondary md:text-lg"
                     >
                         <li>Test zrakovej ostrosti</li>
                         <li>Základný anamnestický dotazník</li>
@@ -247,16 +253,16 @@
                         <img
                             src="/img/aplikacia/scre2.png"
                             alt="Mobil s aplikáciou - oranžový vizuál"
-                            class="mx-auto h-max w-full rounded-xl sm:h-[400px] sm:w-[1000px] md:h-[500px] lg:w-[800px] 2xl:h-[700px] 2xl:w-[1000px]"
+                            class="mx-auto h-max w-full rounded-xl lg:w-[800px]"
                         />
                     </div>
                 </div>
             </main>
 
             <footer role="contentinfo">
-                <div class="flex justify-center pb-4 pt-2">
+                <div class="flex justify-center pb-4">
                     <div
-                        class="h-[10px] w-[284px] rounded-full bg-primary md:h-[15px]"
+                        class="h-[10px] w-2/3 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
                     ></div>
                 </div>
                 <div class="w-full bg-[#152036] py-6 md:py-10 2xl:py-12">
