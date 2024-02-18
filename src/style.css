@@ -17,7 +17,7 @@ a:hover {
     @apply text-[#535bf2];
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
     #burger-menu {
         cursor: pointer;
         height: 20px;
