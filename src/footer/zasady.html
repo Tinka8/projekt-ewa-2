@@ -12,7 +12,7 @@
     <body>
         <div class="wrapper overflow-hidden">
             <header
-                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 items-center justify-between bg-primary py-4 text-secondary sm:px-5 md:flex md:px-10 md:py-5 lg:px-[60px]"
             >
                 <!-- Logo -->
                 <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
@@ -20,9 +20,9 @@
                     <div class="flex w-full items-center justify-between">
                         <a href="/" class="block">
                             <img
-                                src="/img/logo_white.svg"
+                                src="/img/logobiele.png"
                                 alt="Projekt EWA - Logo biele"
-                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                                class="h-[30px] w-[100px] lg:h-[40px] lg:w-[140px]"
                             />
                         </a>
                         <div id="burger-menu">
@@ -32,13 +32,16 @@
                 </div>
 
                 <!-- Navigation -->
-                <nav class="hidden flex-grow-0 sm:block">
-                    <ol class="flex" role="menu">
+                <nav class="hidden flex-grow-0 md:block">
+                    <ol
+                        class="flex justify-between space-x-6 lg:space-x-14"
+                        role="menu"
+                    >
                         <li role="presentation">
                             <a
                                 role="menuitem"
                                 href="/"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Domov</a
                             >
                         </li>
@@ -46,7 +49,7 @@
                             <a
                                 role="menuitem"
                                 href="/o-projekte/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >O projekte</a
                             >
                         </li>
@@ -54,7 +57,7 @@
                             <a
                                 role="menuitem"
                                 href="/aplikacia.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Aplikácia</a
                             >
                         </li>
@@ -62,7 +65,7 @@
                             <a
                                 role="menuitem"
                                 href="/alzheimer/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Alzheimer</a
                             >
                         </li>
@@ -70,7 +73,7 @@
                             <a
                                 role="menuitem"
                                 href="/kontakt.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Kontakt</a
                             >
                         </li>
@@ -78,13 +81,13 @@
                 </nav>
 
                 <!-- Mobile navigation -->
-                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                <nav class="hidden flex-grow-0 md:hidden" id="mobile-menu">
                     <ol class="py-4" role="menu">
                         <li role="presentation">
                             <a
                                 role="menuitem"
                                 href="/"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Domov</a
                             >
                         </li>
@@ -92,7 +95,7 @@
                             <a
                                 role="menuitem"
                                 href="/o-projekte/index.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >O projekte</a
                             >
                         </li>
@@ -100,7 +103,7 @@
                             <a
                                 role="menuitem"
                                 href="/aplikacia.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Aplikácia</a
                             >
                         </li>
@@ -108,7 +111,7 @@
                             <a
                                 role="menuitem"
                                 href="/alzheimer/index.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Alzheimer</a
                             >
                         </li>
@@ -116,7 +119,7 @@
                             <a
                                 role="menuitem"
                                 href="/kontakt.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Kontakt</a
                             >
                         </li>
