@@ -12,7 +12,7 @@
     <body>
         <div class="wrapper overflow-hidden">
             <header
-                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 items-center justify-between bg-primary py-4 text-secondary sm:px-5 md:flex md:px-10 md:py-5 lg:px-[60px]"
             >
                 <!-- Logo -->
                 <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
@@ -20,9 +20,9 @@
                     <div class="flex w-full items-center justify-between">
                         <a href="/" class="block">
                             <img
-                                src="/img/logo_white.svg"
+                                src="/img/logobiele.png"
                                 alt="Projekt EWA - Logo biele"
-                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                                class="h-[30px] w-[100px] lg:h-[40px] lg:w-[140px]"
                             />
                         </a>
                         <div id="burger-menu">
@@ -32,13 +32,16 @@
                 </div>
 
                 <!-- Navigation -->
-                <nav class="hidden flex-grow-0 sm:block">
-                    <ol class="flex" role="menu">
+                <nav class="hidden flex-grow-0 md:block">
+                    <ol
+                        class="flex justify-between space-x-6 lg:space-x-14"
+                        role="menu"
+                    >
                         <li role="presentation">
                             <a
                                 role="menuitem"
                                 href="/"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Domov</a
                             >
                         </li>
@@ -46,7 +49,7 @@
                             <a
                                 role="menuitem"
                                 href="/o-projekte/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >O projekte</a
                             >
                         </li>
@@ -54,7 +57,7 @@
                             <a
                                 role="menuitem"
                                 href="/aplikacia.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Aplikácia</a
                             >
                         </li>
@@ -62,7 +65,7 @@
                             <a
                                 role="menuitem"
                                 href="/alzheimer/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block lg:text-xl"
                                 >Alzheimer</a
                             >
                         </li>
@@ -70,7 +73,7 @@
                             <a
                                 role="menuitem"
                                 href="/kontakt.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Kontakt</a
                             >
                         </li>
@@ -78,13 +81,13 @@
                 </nav>
 
                 <!-- Mobile navigation -->
-                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                <nav class="hidden flex-grow-0 md:hidden" id="mobile-menu">
                     <ol class="py-4" role="menu">
                         <li role="presentation">
                             <a
                                 role="menuitem"
                                 href="/"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Domov</a
                             >
                         </li>
@@ -92,7 +95,7 @@
                             <a
                                 role="menuitem"
                                 href="/o-projekte/index.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >O projekte</a
                             >
                         </li>
@@ -100,7 +103,7 @@
                             <a
                                 role="menuitem"
                                 href="/aplikacia.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Aplikácia</a
                             >
                         </li>
@@ -108,7 +111,7 @@
                             <a
                                 role="menuitem"
                                 href="/alzheimer/index.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-white underline hover:text-white"
                                 >Alzheimer</a
                             >
                         </li>
@@ -116,7 +119,7 @@
                             <a
                                 role="menuitem"
                                 href="/kontakt.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Kontakt</a
                             >
                         </li>
@@ -126,25 +129,25 @@
 
             <!-- Content -->
             <main
-                class="px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
                 role="document"
             >
-                <div class="space-y-8">
+                <div class="max-w-3xl space-y-6">
                     <h2
-                        class="text-2xl font-bold leading-none tracking-tight text-primary sm:text-4xl lg:text-6xl"
+                        class="text-xl font-bold leading-none tracking-tight text-primary md:text-3xl lg:text-4xl"
                     >
                         Precvičenie mentálneho zdravia
                     </h2>
                     <h3
-                        class="text-lg font-bold leading-none tracking-tight text-black sm:text-xl md:text-2xl lg:text-4xl"
+                        class="font-bold leading-none tracking-tight sm:text-xl md:text-2xl"
                     >
                         Na precvičenie mentálneho zdravia vám stačí pero a
                         papier
                     </h3>
                     <ul
-                        class="sm:text-md list-disc pl-10 text-sm font-bold text-primary md:text-lg lg:text-xl"
+                        class="list-disc pl-10 text-sm font-bold text-primary sm:text-base"
                     >
-                        <li class="mb-8">
+                        <li>
                             <a
                                 href="#"
                                 class="text-primary hover:text-emphasis"
@@ -162,14 +165,14 @@
                             logické myslenie.
                         </li>
                     </ul>
-                    <p>
+                    <p class="text-sm sm:text-base">
                         Tieto cvičenia stimulujú rozvoj nových nervových spojení
                         v mozgu.<br />
                         Pracovné listy si môžete vytlačiť, alebo prepísať na
                         papier.
                     </p>
                     <ul
-                        class="sm:text-md list-disc pl-10 text-sm font-bold text-primary md:text-lg lg:text-xl"
+                        class="list-disc pl-10 text-sm font-bold text-primary sm:text-base"
                     >
                         <li>
                             <a href="#" class="text-primary hover:text-emphasis"
@@ -184,7 +187,7 @@
                     </ul>
 
                     <h3
-                        class="text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl lg:text-3xl"
+                        class="font-bold leading-none tracking-tight sm:text-xl md:text-2xl"
                     >
                         Aj pri bežných denných činnostiach môžete podporiť svoje
                         mentálne zdravie
@@ -192,7 +195,7 @@
 
                     <div class="flex items-center">
                         <p
-                            class="max-w-[60em] rounded-l-sm border-l-4 border-secondary py-4 pl-4 text-base font-bold tracking-tight md:text-lg lg:text-xl"
+                            class="rounded-l-sm border-l-4 border-secondary py-4 pl-4 text-sm font-semibold tracking-tight md:text-base"
                         >
                             Ide o techniky budovania a posilňovania sieťových
                             prepojení medzi neurónmi v mozgu (tzv. prepájanie
@@ -203,16 +206,17 @@
                         </p>
                     </div>
 
-                    <ul class="list-disc pl-10 font-semibold lg:text-lg">
+                    <ul class="list-disc space-y-1 pl-10 font-semibold">
                         <li>umývanie zubov</li>
                         <li>práca s počítačovou myšou</li>
                         <li>zamykanie dverí</li>
                         <li>miešanie varechou</li>
                         <li>manipulácia s diaľkovým ovládačom a pod.</li>
                     </ul>
+
                     <div class="flex items-center">
                         <p
-                            class="max-w-[60em] rounded-l-sm border-l-4 border-secondary py-4 pl-4 text-base font-bold tracking-tight md:text-lg lg:text-xl"
+                            class="rounded-l-sm border-l-4 border-secondary py-4 pl-4 text-sm font-semibold tracking-tight md:text-base"
                         >
                             Zapájaním zmyslov: zrak, sluch, čuch, chuť a hmat sa
                             systematicky stimuluje rozvoj nových nervových
@@ -222,7 +226,7 @@
                         </p>
                     </div>
 
-                    <ul class="list-disc pl-10 font-semibold lg:text-lg">
+                    <ul class="list-disc space-y-1 pl-10 font-semibold">
                         <li>osprchujte sa so zatvorenými očami</li>
                         <li>zmeňte svoju obvyklú rannú rutinu</li>
                         <li>ochutnávajte nové chute</li>
