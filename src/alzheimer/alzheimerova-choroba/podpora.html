@@ -12,7 +12,7 @@
     <body>
         <div class="wrapper overflow-hidden">
             <header
-                class="fixed inset-x-0 top-0 z-10 flex-grow-0 justify-between bg-primary text-secondary sm:flex sm:px-[20px] lg:px-[60px]"
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 items-center justify-between bg-primary py-4 text-secondary sm:px-5 md:flex md:px-10 md:py-5 lg:px-[60px]"
             >
                 <!-- Logo -->
                 <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
@@ -20,9 +20,9 @@
                     <div class="flex w-full items-center justify-between">
                         <a href="/" class="block">
                             <img
-                                src="/img/logo_white.svg"
+                                src="/img/logobiele.png"
                                 alt="Projekt EWA - Logo biele"
-                                class="h-[60px] w-[70px] md:w-[90px] lg:h-[84px] lg:w-[130px]"
+                                class="h-[30px] w-[100px] lg:h-[40px] lg:w-[140px]"
                             />
                         </a>
                         <div id="burger-menu">
@@ -32,13 +32,16 @@
                 </div>
 
                 <!-- Navigation -->
-                <nav class="hidden flex-grow-0 sm:block">
-                    <ol class="flex" role="menu">
+                <nav class="hidden flex-grow-0 md:block">
+                    <ol
+                        class="flex justify-between space-x-6 lg:space-x-14"
+                        role="menu"
+                    >
                         <li role="presentation">
                             <a
                                 role="menuitem"
                                 href="/"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Domov</a
                             >
                         </li>
@@ -46,7 +49,7 @@
                             <a
                                 role="menuitem"
                                 href="/o-projekte/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >O projekte</a
                             >
                         </li>
@@ -54,7 +57,7 @@
                             <a
                                 role="menuitem"
                                 href="/aplikacia.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Aplikácia</a
                             >
                         </li>
@@ -62,7 +65,7 @@
                             <a
                                 role="menuitem"
                                 href="/alzheimer/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block lg:text-xl"
                                 >Alzheimer</a
                             >
                         </li>
@@ -70,7 +73,7 @@
                             <a
                                 role="menuitem"
                                 href="/kontakt.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Kontakt</a
                             >
                         </li>
@@ -78,13 +81,13 @@
                 </nav>
 
                 <!-- Mobile navigation -->
-                <nav class="hidden flex-grow-0 sm:hidden" id="mobile-menu">
+                <nav class="hidden flex-grow-0 md:hidden" id="mobile-menu">
                     <ol class="py-4" role="menu">
                         <li role="presentation">
                             <a
                                 role="menuitem"
                                 href="/"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Domov</a
                             >
                         </li>
@@ -92,7 +95,7 @@
                             <a
                                 role="menuitem"
                                 href="/o-projekte/index.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >O projekte</a
                             >
                         </li>
@@ -100,7 +103,7 @@
                             <a
                                 role="menuitem"
                                 href="/aplikacia.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Aplikácia</a
                             >
                         </li>
@@ -108,7 +111,7 @@
                             <a
                                 role="menuitem"
                                 href="/alzheimer/index.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-white underline hover:text-white"
                                 >Alzheimer</a
                             >
                         </li>
@@ -116,7 +119,7 @@
                             <a
                                 role="menuitem"
                                 href="/kontakt.html"
-                                class="text-md block whitespace-nowrap px-2 py-[20px] text-center font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Kontakt</a
                             >
                         </li>
@@ -126,35 +129,35 @@
 
             <!-- Content -->
             <main
-                class="px-[20px] pb-[60px] pt-[120px] sm:px-[40px] md:px-[60px] lg:pb-[80px] lg:pt-[140px] 2xl:pt-[200px]"
+                class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
                 role="document"
             >
-                <div class="space-y-8">
+                <div class="space-y-6">
                     <h2
-                        class="text-2xl font-bold leading-none tracking-tight text-primary sm:text-4xl lg:text-6xl"
+                        class="text-xl font-bold leading-none tracking-tight text-primary md:text-3xl lg:text-4xl"
                     >
                         Podpora mentálneho zdravia
                     </h2>
                     <div class="grid grid-cols-1 lg:grid-cols-2 lg:space-x-20">
-                        <div class="space-y-4">
+                        <div class="max-w-3xl space-y-3">
                             <ul
-                                class="list-disc pl-10 text-xl font-bold text-primary"
+                                class="list-disc pl-10 text-sm font-bold text-primary md:text-xl"
                             >
                                 <li>Čítanie kníh</li>
                             </ul>
 
-                            <p class="mb-1 max-w-3xl">
+                            <p>
                                 Zlepšuje sa slovná zásoba, upokojuje a
                                 koncentruje, podporuje fantáziu a predstavivosť.
                             </p>
 
-                            <article>
+                            <article class="max-w-3xl space-y-3">
                                 <ul
-                                    class="list-disc pl-10 text-xl font-bold text-primary"
+                                    class="list-disc pl-10 text-sm font-bold text-primary md:text-xl"
                                 >
                                     <li>Pohyb</li>
                                 </ul>
-                                <p class="mb-1 max-w-3xl">
+                                <p class="text-sm sm:text-base">
                                     Pravidelný pohyb bráni poklesu mentálnych
                                     schopností. Chôdza, beh, turistika,
                                     plávanie, tancovanie, lyžovanie a samozrejme
@@ -164,7 +167,7 @@
                                     posilňujú pozornosť a zlepšujú mentálne
                                     funkcie.
                                 </p>
-                                <p class="mb-1 max-w-3xl">
+                                <p class="text-sm font-semibold sm:text-base">
                                     Dokáže fyzická aktivita zmierniť ochorenia
                                     mozgu?
                                 </p>
@@ -174,7 +177,7 @@
                                     class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
                                     >čitaj viac&hellip;</a
                                 >
-                                <p class="mb-1 max-w-3xl">
+                                <p class="text-sm font-semibold sm:text-base">
                                     Vplyv fyzickej (ne)aktivity na zdravie
                                     človeka
                                 </p>
@@ -185,13 +188,13 @@
                                 >
                             </article>
 
-                            <article>
+                            <article class="max-w-3xl space-y-3">
                                 <ul
-                                    class="list-disc pl-10 text-xl font-bold text-primary"
+                                    class="list-disc pl-10 text-sm font-bold text-primary md:text-xl"
                                 >
                                     <li>Strava</li>
                                 </ul>
-                                <p class="mb-1 max-w-3xl">
+                                <p class="text-sm sm:text-base">
                                     Na všetky procesy, ktoré sa odohrávajú v
                                     ľudskom mozgu je potrebná energia a výživa.
                                     Ak chceme, aby náš mozog podával výkon, mala
@@ -199,7 +202,7 @@
                                     bielkovín, sacharidov, tukov, minerálov,
                                     vitamínov a primeraným pitným režimom.
                                 </p>
-                                <p class="mb-1 max-w-3xl">
+                                <p class="text-sm font-semibold sm:text-base">
                                     Vhodná strava môže znížiť riziko demencie o
                                     štvrtinu
                                 </p>
@@ -209,7 +212,7 @@
                                     class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
                                     >čitaj viac&hellip;</a
                                 >
-                                <p class="mb-1 max-w-3xl">
+                                <p class="text-sm font-semibold sm:text-base">
                                     11 potravín pre zlepšenie funkcie mozgu
                                 </p>
                                 <a
@@ -220,79 +223,79 @@
                             </article>
                         </div>
 
-                        <div class="space-y-4">
-                            <article>
+                        <div class="max-w-3xl space-y-3">
+                            <article class="max-w-3xl space-y-3">
                                 <ul
-                                    class="list-disc pl-10 text-xl font-bold text-primary"
+                                    class="list-disc pl-10 text-sm font-bold text-primary md:text-xl"
                                 >
                                     <li>Spánok a oddych</li>
                                 </ul>
                                 <a
                                     href="https://www.scanquilt.sk/blog/spanok-v-priebehu-rokov-seniori/"
                                     target="_blank"
-                                    class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                    class="ml-10 inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
                                     >čitaj viac&hellip;</a
                                 >
                             </article>
 
-                            <ul
-                                class="list-disc pl-10 text-xl font-bold text-primary"
-                            >
-                                <li>Socializácia a spoločenské aktivity</li>
-                            </ul>
+                            <article class="max-w-3xl space-y-3">
+                                <ul
+                                    class="list-disc pl-10 text-sm font-bold text-primary md:text-xl"
+                                >
+                                    <li>Socializácia a spoločenské aktivity</li>
+                                </ul>
+                                <p class="text-sm sm:text-base">
+                                    Významný vplyv pri podpore mentálneho
+                                    zdravia má udržavanie čo najširších
+                                    sociálnych kontaktov.
+                                </p>
 
-                            <p class="mb-1 max-w-3xl">
-                                Významný vplyv pri podpore mentálneho zdravia má
-                                udržavanie čo najširších sociálnych kontaktov.
-                            </p>
-
-                            <ul class="pl-10 text-xl">
-                                <li>Seniorské kluby:</li>
-                            </ul>
-
-                            <ol class="pl-10">
-                                <li>
-                                    <a
-                                        href="https://www.aksen.sk/"
-                                        class="text-black"
-                                        >https://www.aksen.sk/</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="https://klubluna.sk/"
-                                        class="text-black"
-                                        >https://klubluna.sk/</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="https://www.petrzalka.sk/klubovna/"
-                                        class="text-black"
-                                        >https://www.petrzalka.sk/klubovna/</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="https://seniorivpohybe.sk/"
-                                        class="text-black"
-                                        >https://seniorivpohybe.sk/</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="https://www.staledobri.sk/"
-                                        class="text-black"
-                                        >https://www.staledobri.sk/</a
-                                    >
-                                </li>
-                            </ol>
+                                <ul
+                                    class="pl-10 text-sm font-semibold sm:text-xl"
+                                >
+                                    <li>Seniorské kluby:</li>
+                                </ul>
+                                <ol class="space-y-1 pl-10">
+                                    <li>
+                                        <a
+                                            href="https://www.aksen.sk/"
+                                            class="text-black"
+                                            >https://www.aksen.sk/</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://klubluna.sk/"
+                                            class="text-black"
+                                            >https://klubluna.sk/</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.petrzalka.sk/klubovna/"
+                                            class="text-black"
+                                            >https://www.petrzalka.sk/klubovna/</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://seniorivpohybe.sk/"
+                                            class="text-black"
+                                            >https://seniorivpohybe.sk/</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.staledobri.sk/"
+                                            class="text-black"
+                                            >https://www.staledobri.sk/</a
+                                        >
+                                    </li>
+                                </ol>
+                            </article>
                         </div>
                     </div>
-                    <br />
                 </div>
-                <br />
-                <br />
             </main>
 
             <footer role="contentinfo">
