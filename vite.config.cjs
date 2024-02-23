@@ -22,6 +22,10 @@ export default defineConfig({
                     __dirname,
                     "src/alzheimer/aktuality/novinky.html",
                 ),
+                aktualityPodkasty: resolve(
+                    __dirname,
+                    "src/alzheimer/aktuality/podkasty.html",
+                ),
                 aktualityPublikacie: resolve(
                     __dirname,
                     "src/alzheimer/aktuality/publikacie.html",
