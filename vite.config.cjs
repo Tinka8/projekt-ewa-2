@@ -30,11 +30,6 @@ export default defineConfig({
                     __dirname,
                     "src/alzheimer/aktuality/publikacie.html",
                 ),
-
-                alzheimerIndex: resolve(
-                    __dirname,
-                    "src/alzheimer/alzheimerova-choroba/index.html",
-                ),
                 alzheimerPodpora: resolve(
                     __dirname,
                     "src/alzheimer/alzheimerova-choroba/podpora.html",
@@ -43,6 +38,14 @@ export default defineConfig({
                     __dirname,
                     "src/alzheimer/alzheimerova-choroba/precvicenie.html",
                 ),
+                alzheimerIndex: resolve(__dirname, "src/alzheimer/index.html"),
+                alzheimerChorobaIndex: resolve(
+                    __dirname,
+                    "src/alzheimer/alzheimerova-choroba/index.html",
+                ),
+
+                footerGdpr: resolve(__dirname, "src/footer/gdpr.html"),
+                footerZasady: resolve(__dirname, "src/footer/zasady.html"),
 
                 oprojekteIndex: resolve(__dirname, "src/o-projekte/index.html"),
                 oprojekteMedia: resolve(__dirname, "src/o-projekte/media.html"),
