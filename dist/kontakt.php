@@ -120,7 +120,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // If there are errors, return errors.
     if (!empty($errors)) {
-        echo json_encode(['errors' => $errors]);
+        // echo json_encode(['errors' => $errors]);
+        header('Location: /kontakt.html');
         exit;
     }
 
@@ -142,9 +143,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         $response = $sendgrid->send($mail);
-        echo json_encode(['success' => $lang[$currentLanguage]['sent']]);
+        // echo json_encode(['success' => $lang[$currentLanguage]['sent']]);
+        header('Location: /kontakt.html');
     } catch (Exception $e) {
-        echo json_encode(['errors' => [$lang[$currentLanguage]['failure']]]);
+        // echo json_encode(['errors' => [$lang[$currentLanguage]['failure']]]);
+        header('Location: /kontakt.html');
         exit;
     }
 }
