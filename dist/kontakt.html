@@ -143,9 +143,14 @@
 
                         <form
                             method="POST"
-                            action="/kontakt.html"
+                            action="/kontakt.php"
                             class="max-w-screen-lg space-y-6"
                         >
+                            <input
+                                type="hidden"
+                                id="recaptchaResponse"
+                                name="recaptcha_response"
+                            />
                             <div
                                 class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
                             >
@@ -160,6 +165,7 @@
                                         name="name"
                                         id="contact-name"
                                         class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -177,6 +183,7 @@
                                         name="lastname"
                                         id="contact-lastname"
                                         class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -197,6 +204,7 @@
                                         name="email"
                                         id="contact-email"
                                         class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -237,6 +245,7 @@
                                         name="note"
                                         id="contact-note"
                                         class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -333,6 +342,20 @@
             burgerMenu.addEventListener("click", function () {
                 mobileMenu.classList.toggle("hidden");
                 burgerMenu.classList.toggle("close");
+            });
+        </script>
+
+        <script src="https://www.google.com/recaptcha/api.js?render={GRECAPTCHA_SITE_KEY}"></script>
+        <script>
+            grecaptcha.ready(function () {
+                grecaptcha
+                    .execute("{GRECAPTCHA_SITE_KEY}", {
+                        action: "submit",
+                    })
+                    .then(function (token) {
+                        document.getElementById("recaptchaResponse").value =
+                            token;
+                    });
             });
         </script>
     </body>

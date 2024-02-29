@@ -1,0 +1,6 @@
+{
+    "require": {
+        "sendgrid/sendgrid": "^8.1",
+        "google/recaptcha": "^1.3"
+    }
+}
