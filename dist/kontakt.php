@@ -19,7 +19,7 @@
 |
 */
 
-$from = 'info@projektewa.sk';
+$from = 'ewa@axonpro.sk';
 $to = 'ewa@axonpro.sk';
 $subject = 'Nová správa z kontaktného formulára';
 $sendgridApiKey = '{SENDGRID_API_KEY}';   // Fill SendGrid API key
