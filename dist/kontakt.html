@@ -6,7 +6,8 @@
         <link rel="icon" type="image/png" href="./img/logo_fialove.png" />
         <link rel="stylesheet" href="./lato.css" />
         <title>Projekt EWA - Kontakt</title>
-      <link rel="stylesheet" href="./assets/style-59aae760.css">
+        
+      <link rel="stylesheet" href="./assets/style-5d363d45.css">
     </head>
 
     <body>
@@ -144,6 +145,8 @@
                             method="POST"
                             action="/kontakt.php"
                             class="max-w-screen-lg space-y-6"
+                            id="contact-form"
+                            novalidate
                         >
                             <input
                                 type="hidden"
@@ -281,7 +284,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex justify-end font-bold md:text-2xl">
+                            <div
+                                class="flex items-center justify-end space-x-2 font-bold md:text-2xl"
+                            >
+                                <div
+                                    id="contact-form-message"
+                                    class="text-xl"
+                                ></div>
                                 <button
                                     type="submit"
                                     class="rounded-xl bg-secondary px-10 py-2 hover:bg-emphasis"
@@ -342,8 +351,19 @@
                 mobileMenu.classList.toggle("hidden");
                 burgerMenu.classList.toggle("close");
             });
+
+            var contactForm = document.getElementById("contact-form");
+            var contactFormMessage = document.getElementById(
+                "contact-form-message",
+            );
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                contactFormMessage.innerHTML =
+                    "Momentálne nie je možné poslať Váš formulár, prosím napíšte mail na ewa@axonpro.sk";
+            });
         </script>
-        
+
         <script src="https://www.google.com/recaptcha/api.js?render={GRECAPTCHA_SITE_KEY}"></script>
         <script>
             grecaptcha.ready(function () {

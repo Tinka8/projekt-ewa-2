@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" href="./img/logo_fialove.png" />
-        <link rel="stylesheet" href="./lato.css" />
+        <link rel="icon" type="image/png" href="/img/logo_fialove.png" />
+        <link rel="stylesheet" href="/lato.css" />
         <title>Projekt EWA - Kontakt</title>
         <link rel="stylesheet" href="/style.css" />
     </head>
@@ -283,8 +283,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex justify-end font-bold md:text-2xl">
-                                <div id="contact-form-message"></div>
+                            <div
+                                class="flex items-center justify-end space-x-2 font-bold md:text-2xl"
+                            >
+                                <div
+                                    id="contact-form-message"
+                                    class="text-xl"
+                                ></div>
                                 <button
                                     type="submit"
                                     class="rounded-xl bg-secondary px-10 py-2 hover:bg-emphasis"
@@ -354,7 +359,7 @@
                 event.preventDefault();
 
                 contactFormMessage.innerHTML =
-                    "Momentalne nie je mozne poslat Vas formular, prosim napiste mail na ewa@axonpro.sk";
+                    "Momentálne nie je možné poslať Váš formulár, prosím napíšte mail na ewa@axonpro.sk";
             });
         </script>
 
