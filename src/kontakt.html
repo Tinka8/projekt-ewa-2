@@ -132,173 +132,161 @@
                 class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
                 role="document"
             >
-                <div class="grid grid-cols-1">
-                    <div class="col-span-1 space-y-10">
-                        <h2
-                            class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl"
-                        >
-                            Kontaktný formulár
-                        </h2>
+                <div class="max-w-[80em] space-y-10">
+                    <h2
+                        class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-5xl"
+                    >
+                        Kontaktný formulár
+                    </h2>
 
-                        <form
-                            method="POST"
-                            action="/kontakt.php"
-                            class="max-w-screen-lg space-y-6"
-                            id="contact-form"
-                            novalidate
+                    <form
+                        method="POST"
+                        action="/kontakt.php"
+                        class="max-w-screen-lg space-y-6"
+                        id="contact-form"
+                        novalidate
+                    >
+                        <input
+                            type="hidden"
+                            id="recaptchaResponse"
+                            name="recaptcha_response"
+                        />
+                        <div
+                            class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
                         >
-                            <input
-                                type="hidden"
-                                id="recaptchaResponse"
-                                name="recaptcha_response"
-                            />
-                            <div
-                                class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
-                            >
-                                <div class="col-span-2">
-                                    <label class="font-bold" for="contact-name">
-                                        Meno:
-                                    </label>
-                                </div>
-                                <div class="col-span-10">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="contact-name"
-                                        class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
-                                        required
-                                    />
-                                </div>
+                            <div class="col-span-2">
+                                <label class="font-bold" for="contact-name">
+                                    Meno:
+                                </label>
                             </div>
-                            <div
-                                class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
-                            >
-                                <div class="col-span-2">
-                                    <label class="font-bold" for="contact-name">
-                                        Priezvisko:
-                                    </label>
-                                </div>
-                                <div class="col-span-10">
-                                    <input
-                                        type="text"
-                                        name="lastname"
-                                        id="contact-lastname"
-                                        class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
-                                        required
-                                    />
-                                </div>
+                            <div class="col-span-10">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="contact-name"
+                                    class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                    required
+                                />
                             </div>
-                            <div
-                                class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
-                            >
-                                <div class="col-span-2">
-                                    <label
-                                        class="font-bold"
-                                        for="contact-email"
+                        </div>
+                        <div
+                            class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
+                        >
+                            <div class="col-span-2">
+                                <label class="font-bold" for="contact-name">
+                                    Priezvisko:
+                                </label>
+                            </div>
+                            <div class="col-span-10">
+                                <input
+                                    type="text"
+                                    name="lastname"
+                                    id="contact-lastname"
+                                    class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
+                        >
+                            <div class="col-span-2">
+                                <label class="font-bold" for="contact-email">
+                                    Email:
+                                </label>
+                            </div>
+                            <div class="col-span-10">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="contact-email"
+                                    class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
+                        >
+                            <div class="col-span-2">
+                                <label class="font-bold" for="contact-phone">
+                                    Telefón:
+                                </label>
+                            </div>
+                            <div class="col-span-10">
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="contact-phone"
+                                    class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
+                        >
+                            <div class="col-span-2">
+                                <label class="font-bold" for="contact-phone">
+                                    Správa:
+                                </label>
+                            </div>
+                            <div class="col-span-10">
+                                <input
+                                    type="text"
+                                    name="note"
+                                    id="contact-note"
+                                    class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="grid-cols-12 items-center text-xs font-bold sm:text-base md:grid"
+                        >
+                            <div class="col-span-2"></div>
+                            <div class="col-span-10">
+                                <div class="space-y-5">
+                                    <p class="text-sm sm:text-base">
+                                        V prípade akýchkoľvek otázok, problémov
+                                        alebo podnetov prosím kontaktujte tvorcu
+                                        aplikácie AXON PRO s.r.o.
+                                    </p>
+                                    <ul
+                                        class="space-y-10 text-left sm:flex sm:space-x-10 sm:space-y-0"
                                     >
-                                        Email:
-                                    </label>
-                                </div>
-                                <div class="col-span-10">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="contact-email"
-                                        class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
-                                        required
-                                    />
+                                        <li>
+                                            <a
+                                                href="mailto:office@axonpro.sk"
+                                                class="rounded-xl bg-secondary px-4 py-2 font-semibold text-black hover:bg-emphasis hover:text-black"
+                                                >email: ewa@axonpro.sk</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="tel:0262410360"
+                                                class="rounded-xl bg-secondary px-4 py-2 font-semibold text-black hover:bg-emphasis hover:text-black"
+                                                >tel: 02 6241 0360</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                        </div>
+                        <div
+                            class="flex items-center justify-end space-x-2 font-bold md:text-2xl"
+                        >
                             <div
-                                class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
+                                id="contact-form-message"
+                                class="text-xl"
+                            ></div>
+                            <button
+                                type="submit"
+                                class="rounded-xl bg-secondary px-10 py-2 hover:bg-emphasis"
                             >
-                                <div class="col-span-2">
-                                    <label
-                                        class="font-bold"
-                                        for="contact-phone"
-                                    >
-                                        Telefón:
-                                    </label>
-                                </div>
-                                <div class="col-span-10">
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        id="contact-phone"
-                                        class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                class="grid-cols-12 items-center space-y-2 font-bold leading-none tracking-tight sm:text-xl md:grid md:space-y-0 md:text-2xl"
-                            >
-                                <div class="col-span-2">
-                                    <label
-                                        class="font-bold"
-                                        for="contact-phone"
-                                    >
-                                        Správa:
-                                    </label>
-                                </div>
-                                <div class="col-span-10">
-                                    <input
-                                        type="text"
-                                        name="note"
-                                        id="contact-note"
-                                        class="w-2/4 rounded-xl border-[2px] border-primary px-6 py-1 focus:border-emphasis md:w-full md:border-[3px] md:py-2"
-                                        required
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                class="grid-cols-12 items-center text-xs font-bold sm:text-base md:grid"
-                            >
-                                <div class="col-span-2"></div>
-                                <div class="col-span-10">
-                                    <div class="space-y-4">
-                                        <p>
-                                            V prípade akýchkoľvek otázok,
-                                            problémov alebo podnetov prosím
-                                            kontaktujte tvorcu aplikácie AXON
-                                            PRO s.r.o.
-                                        </p>
-                                        <ul
-                                            class="space-y-10 text-left sm:flex sm:space-x-10 sm:space-y-0"
-                                        >
-                                            <li>
-                                                <a
-                                                    href="mailto:office@axonpro.sk"
-                                                    class="rounded-xl bg-secondary px-4 py-2 font-semibold text-black hover:bg-emphasis hover:text-black"
-                                                    >email: ewa@axonpro.sk</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="tel:0262410360"
-                                                    class="rounded-xl bg-secondary px-4 py-2 font-semibold text-black hover:bg-emphasis hover:text-black"
-                                                    >tel: 02 6241 0360</a
-                                                >
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="flex items-center justify-end space-x-2 font-bold md:text-2xl"
-                            >
-                                <div
-                                    id="contact-form-message"
-                                    class="text-xl"
-                                ></div>
-                                <button
-                                    type="submit"
-                                    class="rounded-xl bg-secondary px-10 py-2 hover:bg-emphasis"
-                                >
-                                    Odoslať
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                                Odoslať
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </main>
 
@@ -308,7 +296,7 @@
                         class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
                     ></div>
                 </div>
-                <div class="w-full bg-light-gray py-6">
+                <div class="w-full bg-light-gray py-4">
                     <div
                         class="grid items-center space-y-8 text-center md:grid-cols-2 md:space-y-0"
                     >
