@@ -77,6 +77,27 @@
                                 >Kontakt</a
                             >
                         </li>
+                        <li role="presentation" class="relative">
+                            <a
+                                role="menuitem"
+                                href="/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
+                                >SK</a
+                            >
+                            <a
+                                href="/en/index.html"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
+                            >
+                                <span
+                                    class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
+                                ></span>
+                                <span class="relative z-10 block bg-secondary">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
                     </ol>
                 </nav>
 
@@ -121,6 +142,14 @@
                                 href="/kontakt.html"
                                 class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Kontakt</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >EN</a
                             >
                         </li>
                     </ol>
@@ -302,6 +331,30 @@
             burgerMenu.addEventListener("click", function () {
                 mobileMenu.classList.toggle("hidden");
                 burgerMenu.classList.toggle("close");
+            });
+
+            var languageSwitcherOpener = document.getElementById(
+                "language-switcher-opener",
+            );
+
+            languageSwitcherOpener.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                var languageSwitcher =
+                    document.getElementById("language-switcher");
+                languageSwitcher.classList.toggle("hidden");
+            });
+
+            document.addEventListener("click", function (event) {
+                var languageSwitcher =
+                    document.getElementById("language-switcher");
+                if (
+                    !languageSwitcher.classList.contains("hidden") &&
+                    event.target !== languageSwitcher &&
+                    event.target !== languageSwitcherOpener
+                ) {
+                    languageSwitcher.classList.add("hidden");
+                }
             });
         </script>
     </body>
