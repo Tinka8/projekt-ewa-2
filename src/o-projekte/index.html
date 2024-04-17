@@ -217,7 +217,7 @@
                         </li>
                     </ul>
 
-                    <div class="flex justify-around">
+                    <div class="justify-around text-center sm:flex">
                         <article class="space-y-3">
                             <div class="flex items-center">
                                 <img
@@ -234,7 +234,7 @@
 
                             <a
                                 href="/o-projekte/vyskum.html"
-                                class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                                class="mx-auto inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
                                 >čitaj viac&hellip;</a
                             >
                         </article>
@@ -324,38 +324,6 @@
             </footer>
         </div>
 
-        <script>
-            var burgerMenu = document.getElementById("burger-menu");
-            var mobileMenu = document.getElementById("mobile-menu");
-
-            burgerMenu.addEventListener("click", function () {
-                mobileMenu.classList.toggle("hidden");
-                burgerMenu.classList.toggle("close");
-            });
-
-            var languageSwitcherOpener = document.getElementById(
-                "language-switcher-opener",
-            );
-
-            languageSwitcherOpener.addEventListener("click", function (event) {
-                event.preventDefault();
-
-                var languageSwitcher =
-                    document.getElementById("language-switcher");
-                languageSwitcher.classList.toggle("hidden");
-            });
-
-            document.addEventListener("click", function (event) {
-                var languageSwitcher =
-                    document.getElementById("language-switcher");
-                if (
-                    !languageSwitcher.classList.contains("hidden") &&
-                    event.target !== languageSwitcher &&
-                    event.target !== languageSwitcherOpener
-                ) {
-                    languageSwitcher.classList.add("hidden");
-                }
-            });
-        </script>
+        <script src="/main.js"></script>
     </body>
 </html>
