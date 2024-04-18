@@ -77,16 +77,18 @@
                                 >Contact</a
                             >
                         </li>
-                        <li role="presentation" class="group relative">
+                        <li role="presentation" class="relative">
                             <a
                                 role="menuitem"
-                                href="/"
+                                href="/en/index.html"
                                 class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
                                 >EN</a
                             >
                             <a
-                                href="/en/index.html"
-                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary group-hover:block"
+                                href="/"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
                             >
                                 <span
                                     class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
@@ -147,7 +149,7 @@
                                 role="menuitem"
                                 href="/"
                                 class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
-                                >EN</a
+                                >SK</a
                             >
                         </li>
                     </ol>
@@ -296,14 +298,6 @@
             </footer>
         </div>
 
-        <script>
-            var burgerMenu = document.getElementById("burger-menu");
-            var mobileMenu = document.getElementById("mobile-menu");
-
-            burgerMenu.addEventListener("click", function () {
-                mobileMenu.classList.toggle("hidden");
-                burgerMenu.classList.toggle("close");
-            });
-        </script>
+        <script src="/main.js"></script>
     </body>
 </html>
