@@ -115,6 +115,7 @@ export default defineConfig({
                 ),
 
                 aboutEwaTeam: resolve(__dirname, "src/en/about-ewa/team.html"),
+                main: resolve(__dirname, "src/main.js"),
             },
         },
     },
