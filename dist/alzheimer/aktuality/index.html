@@ -7,7 +7,7 @@
         
         <link rel="stylesheet" href="../../lato.css" />
         <title>Projekt EWA - Aktuality</title>
-      <link rel="stylesheet" href="../../assets/style-5d363d45.css">
+      <link rel="stylesheet" href="../../assets/style-c814615a.css">
     </head>
 
     <body>
@@ -78,6 +78,27 @@
                                 >Kontakt</a
                             >
                         </li>
+                        <li role="presentation" class="relative">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
+                                >SK</a
+                            >
+                            <a
+                                href="/en/index.html"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
+                            >
+                                <span
+                                    class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
+                                ></span>
+                                <span class="relative z-10 block bg-secondary">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
                     </ol>
                 </nav>
 
@@ -124,6 +145,14 @@
                                 >Kontakt</a
                             >
                         </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >EN</a
+                            >
+                        </li>
                     </ol>
                 </nav>
             </header>
@@ -135,7 +164,7 @@
             >
                 <div>
                     <h2
-                        class="text-xl font-bold leading-none tracking-tight text-primary md:text-3xl lg:text-4xl"
+                        class="text-xl font-bold leading-none tracking-tight text-primary md:text-3xl lg:text-5xl"
                     >
                         Aktuality a zaujímavosti
                     </h2>
@@ -154,7 +183,9 @@
                                         class="box-content h-[100px] w-[100px] rounded-3xl border-[30px] border-secondary bg-secondary object-contain object-center hover:border-emphasis hover:bg-emphasis sm:border-[50px]"
                                     />
                                 </span>
-                                <p class="text-lg font-bold text-black">
+                                <p
+                                    class="text-lg font-bold text-black lg:text-xl"
+                                >
                                     Novinky
                                 </p>
                             </a>
@@ -172,7 +203,9 @@
                                         class="mx-auto box-content h-[100px] w-[100px] rounded-3xl border-[30px] border-secondary bg-secondary object-contain object-center hover:border-emphasis hover:bg-emphasis sm:border-[50px]"
                                     />
                                 </span>
-                                <p class="text-lg font-bold text-black">
+                                <p
+                                    class="text-lg font-bold text-black lg:text-xl"
+                                >
                                     Podkasty a rozhovory
                                 </p>
                             </a>
@@ -190,7 +223,9 @@
                                         class="box-content h-[100px] w-[100px] rounded-3xl border-[30px] border-secondary bg-secondary object-contain object-center hover:border-emphasis hover:bg-emphasis sm:border-[50px]"
                                     />
                                 </span>
-                                <p class="text-lg font-bold text-black">
+                                <p
+                                    class="text-lg font-bold text-black lg:text-xl"
+                                >
                                     Publikácie
                                 </p>
                             </a>
@@ -205,7 +240,7 @@
                         class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
                     ></div>
                 </div>
-                <div class="w-full bg-light-gray py-6">
+                <div class="w-full bg-light-gray py-4">
                     <div
                         class="grid items-center space-y-8 text-center md:grid-cols-2 md:space-y-0"
                     >
@@ -239,14 +274,6 @@
             </footer>
         </div>
 
-        <script>
-            var burgerMenu = document.getElementById("burger-menu");
-            var mobileMenu = document.getElementById("mobile-menu");
-
-            burgerMenu.addEventListener("click", function () {
-                mobileMenu.classList.toggle("hidden");
-                burgerMenu.classList.toggle("close");
-            });
-        </script>
+        <script src="/main.js"></script>
     </body>
 </html>

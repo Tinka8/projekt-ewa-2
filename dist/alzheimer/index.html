@@ -7,7 +7,7 @@
         
         <link rel="stylesheet" href="../lato.css" />
         <title>Projekt EWA - Alzheimer</title>
-      <link rel="stylesheet" href="../assets/style-5d363d45.css">
+      <link rel="stylesheet" href="../assets/style-c814615a.css">
     </head>
 
     <body>
@@ -78,6 +78,27 @@
                                 >Kontakt</a
                             >
                         </li>
+                        <li role="presentation" class="relative">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
+                                >SK</a
+                            >
+                            <a
+                                href="/en/index.html"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
+                            >
+                                <span
+                                    class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
+                                ></span>
+                                <span class="relative z-10 block bg-secondary">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
                     </ol>
                 </nav>
 
@@ -124,6 +145,14 @@
                                 >Kontakt</a
                             >
                         </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >EN</a
+                            >
+                        </li>
                     </ol>
                 </nav>
             </header>
@@ -133,12 +162,12 @@
                 class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
                 role="document"
             >
-                <div class="space-y-6">
+                <div class="max-w-[80em] space-y-6">
                     <div
                         class="flex items-center space-x-3 sm:space-x-5 lg:space-x-8"
                     >
                         <h2
-                            class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl"
+                            class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-5xl"
                         >
                             Alzheimer
                         </h2>
@@ -150,7 +179,7 @@
                     </div>
 
                     <ul
-                        class="max-w-3xl list-disc pl-10 text-sm font-bold text-primary sm:text-base"
+                        class="list-disc pl-5 text-sm font-bold text-primary sm:text-base lg:text-xl"
                     >
                         <li>
                             <p>
@@ -165,9 +194,9 @@
                         </li>
                     </ul>
 
-                    <article class="max-w-3xl space-y-3 pt-12">
+                    <article class="space-y-3 pt-12">
                         <h3
-                            class="font-bold leading-none tracking-tight sm:text-xl md:text-2xl"
+                            class="font-bold leading-none tracking-tight sm:text-xl md:text-3xl"
                         >
                             Alzheimerova choroba
                         </h3>
@@ -178,9 +207,9 @@
                         >
                     </article>
 
-                    <article class="max-w-3xl space-y-3">
+                    <article class="space-y-3">
                         <h3
-                            class="font-bold leading-none tracking-tight sm:text-xl md:text-2xl"
+                            class="font-bold leading-none tracking-tight sm:text-xl md:text-3xl"
                         >
                             Aktuality a zaujímavosti
                         </h3>
@@ -199,7 +228,7 @@
                         class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
                     ></div>
                 </div>
-                <div class="w-full bg-light-gray py-6">
+                <div class="w-full bg-light-gray py-4">
                     <div
                         class="grid items-center space-y-8 text-center md:grid-cols-2 md:space-y-0"
                     >
@@ -233,14 +262,6 @@
             </footer>
         </div>
 
-        <script>
-            var burgerMenu = document.getElementById("burger-menu");
-            var mobileMenu = document.getElementById("mobile-menu");
-
-            burgerMenu.addEventListener("click", function () {
-                mobileMenu.classList.toggle("hidden");
-                burgerMenu.classList.toggle("close");
-            });
-        </script>
+        <script src="/main.js"></script>
     </body>
 </html>

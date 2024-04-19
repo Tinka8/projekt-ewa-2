@@ -54,6 +54,67 @@ export default defineConfig({
                     __dirname,
                     "src/o-projekte/vyskum.html",
                 ),
+
+                indexEn: resolve(__dirname, "src/en/index.html"),
+                contact: resolve(__dirname, "src/en/contact.html"),
+                app: resolve(__dirname, "src/en/app.html"),
+
+                alzheimerIndexEn: resolve(
+                    __dirname,
+                    "src/en/alzheimer/index.html",
+                ),
+
+                alzehimerDiseaseIndex: resolve(
+                    __dirname,
+                    "src/en/alzheimer/disease/index.html",
+                ),
+
+                alzehimerDiseasePractice: resolve(
+                    __dirname,
+                    "src/en/alzheimer/disease/practice.html",
+                ),
+
+                alzheimerDiseaseSupport: resolve(
+                    __dirname,
+                    "src/en/alzheimer/disease/support.html",
+                ),
+
+                alzheimerNewsIndex: resolve(
+                    __dirname,
+                    "src/en/alzheimer/news/index.html",
+                ),
+
+                alzheimerNewsNews: resolve(
+                    __dirname,
+                    "src/en/alzheimer/news/news.html",
+                ),
+
+                alzheimerNewsPodcasts: resolve(
+                    __dirname,
+                    "src/en/alzheimer/news/podcasts.html",
+                ),
+
+                alzheimerNewsPublications: resolve(
+                    __dirname,
+                    "src/en/alzheimer/news/publications.html",
+                ),
+
+                aboutEwaIndex: resolve(
+                    __dirname,
+                    "src/en/about-ewa/index.html",
+                ),
+
+                aboutEwaMedia: resolve(
+                    __dirname,
+                    "src/en/about-ewa/media.html",
+                ),
+
+                aboutEwaResearch: resolve(
+                    __dirname,
+                    "src/en/about-ewa/research.html",
+                ),
+
+                aboutEwaTeam: resolve(__dirname, "src/en/about-ewa/team.html"),
             },
         },
     },

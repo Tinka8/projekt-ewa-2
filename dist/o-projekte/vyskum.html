@@ -7,7 +7,7 @@
         
         <link rel="stylesheet" href="../lato.css" />
         <title>Projekt EWA - Výskum</title>
-      <link rel="stylesheet" href="../assets/style-5d363d45.css">
+      <link rel="stylesheet" href="../assets/style-c814615a.css">
     </head>
 
     <body>
@@ -78,6 +78,27 @@
                                 >Kontakt</a
                             >
                         </li>
+                        <li role="presentation" class="relative">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
+                                >SK</a
+                            >
+                            <a
+                                href="/en/index.html"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
+                            >
+                                <span
+                                    class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
+                                ></span>
+                                <span class="relative z-10 block bg-secondary">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
                     </ol>
                 </nav>
 
@@ -124,6 +145,14 @@
                                 >Kontakt</a
                             >
                         </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >EN</a
+                            >
+                        </li>
                     </ol>
                 </nav>
             </header>
@@ -133,103 +162,98 @@
                 class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
                 role="document"
             >
-                <div class="grid grid-cols-1">
-                    <div class="col-span-1 space-y-10">
-                        <article class="max-w-3xl space-y-6">
-                            <h2
-                                class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl"
-                            >
-                                Výskum
-                            </h2>
-                            <p class="text-sm sm:text-base">
-                                Výskum v projekte EWA mal tri hlavné časti:
-                                získavanie dát, spracovanie dát s cieľom výberu
-                                parametrov rečového prejavu a vyhodnocovanie
-                                parametrov s cieľom rozlíšiť prejavy zdravých
-                                ľudí od ľudí s kognitívnymi poruchami.
-                            </p>
-                        </article>
-                        <article class="max-w-3xl">
-                            <h3
-                                class="flex items-center font-bold leading-none tracking-tight text-primary sm:text-xl md:text-2xl"
-                            >
-                                <span>Získavanie dát</span>
-                                <img
-                                    src="../img/artboard_1_9.png"
-                                    alt="Ikona - Získavanie dát"
-                                    class="h-[64px] w-[64px]"
-                                />
-                            </h3>
-                            <p class="text-sm sm:text-base">
-                                V spolupráci s odborníkmi z oblasti neurológie a
-                                psychológie bolo potrebné vytvoriť metodiku,
-                                ktorá sa zaoberala navrhnutím obrázkov vhodných
-                                pre tento účel, určením základných
-                                charakteristík nahrávania, kategorizácie
-                                zdravých a chorých a priebežnou optimalizáciou
-                                stanovenej metodiky. Následne sa vyvíjala
-                                intuitívna aplikácia, ktorá zbierala dáta
-                                nahrávaním rečových prejavov osôb popisujúcich
-                                obrázky.
-                            </p>
-                        </article>
-                        <article class="max-w-3xl">
-                            <h3
-                                class="flex items-center font-bold leading-none tracking-tight text-primary sm:text-xl md:text-2xl"
-                            >
-                                <span>Spracovanie dát</span>
-                                <img
-                                    src="../img/icons/speech_to_text_360.png"
-                                    alt="Ikona - ASR"
-                                    class="ml-4 h-[64px] w-[100px]"
-                                />
-                            </h3>
-                            <p class="text-sm sm:text-base">
-                                V spontánnej reči sa objavujú okrem slov aj iné
-                                zvukové prejavy ako smiech, hmkanie, kašlanie,
-                                pauzy a pod. Anotácia znamená ručný prepis
-                                hlasového prejavu do textu s vyznačením týchto
-                                sprievodných zvukových prejavov. Anotácie sú
-                                jednou z fáz pri príprave nástroja umelej
-                                inteligencie pre prevod reči do textu – ASR
-                                (Automatic Speech Recognition). Následne boli
-                                rečové prejavy podrobené akustickej analýze,
-                                ktorá vyťažila zo zvukových záznamov stovky
-                                parametrov ako dĺžka, hlasitosť, rôzne druhy
-                                frekvencií, farba hlasu a iné. Z lingvistickej
-                                analýzy sa určili tzv. NLP (Natural Language
-                                Processing) parametre ako počty plnovýznamových
-                                slov, rôznych slovných druhov, rôzne lexikálne a
-                                sémantické parametre.
-                            </p>
-                        </article>
-                        <article class="max-w-3xl">
-                            <h3
-                                class="flex items-center font-bold leading-none tracking-tight text-primary sm:text-xl md:text-2xl"
-                            >
-                                <span> Vyhodnocovanie parametrov </span>
-                                <img
-                                    src="../img/artboard_1_10.png"
-                                    alt="Ikona - Vyhodnocovanie dát"
-                                    class="h-[64px] w-[64px]"
-                                />
-                            </h3>
-                            <p class="text-sm sm:text-base">
-                                Z jednej nahrávky, ktorá obsahovala popis 65
-                                obrázkov, teda 65 rozličných rečových prejavov
-                                vzniklo vyše 100 000 parametrov, ktoré boli
-                                použité v rôznych metódach počítačových
-                                algoritmov a umelej inteligencie ako lineárna
-                                regresia, Random Forest a neurónové siete.
-                                Pomocou týchto metód s vedomím toho, či išlo o
-                                nahrávku človeka zdravého alebo s diagnózou sa
-                                dosiahla schopnosť počítača rozlíšiť s vysokou
-                                pravdepodobnosťou o akú nahrávku ide. Ďalším
-                                výsledkom výskumu boli zaujímavé štatistické
-                                charakteristiky.
-                            </p>
-                        </article>
-                    </div>
+                <div class="max-w-[80em] space-y-10">
+                    <article class="space-y-6">
+                        <h2
+                            class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-5xl"
+                        >
+                            Výskum
+                        </h2>
+                        <p class="text-sm sm:text-base lg:text-xl">
+                            Výskum v projekte EWA mal tri hlavné časti:
+                            získavanie dát, spracovanie dát s cieľom výberu
+                            parametrov rečového prejavu a vyhodnocovanie
+                            parametrov s cieľom rozlíšiť prejavy zdravých ľudí
+                            od ľudí s kognitívnymi poruchami.
+                        </p>
+                    </article>
+                    <article>
+                        <h3
+                            class="flex items-center font-bold leading-none tracking-tight text-primary sm:text-xl md:text-3xl"
+                        >
+                            <span>Získavanie dát</span>
+                            <img
+                                src="../img/artboard_1_9.png"
+                                alt="Ikona - Získavanie dát"
+                                class="h-[64px] w-[64px]"
+                            />
+                        </h3>
+                        <p class="text-sm sm:text-base lg:text-xl">
+                            V spolupráci s odborníkmi z oblasti neurológie a
+                            psychológie bolo potrebné vytvoriť metodiku, ktorá
+                            sa zaoberala navrhnutím obrázkov vhodných pre tento
+                            účel, určením základných charakteristík nahrávania,
+                            kategorizácie zdravých a chorých a priebežnou
+                            optimalizáciou stanovenej metodiky. Následne sa
+                            vyvíjala intuitívna aplikácia, ktorá zbierala dáta
+                            nahrávaním rečových prejavov osôb popisujúcich
+                            obrázky.
+                        </p>
+                    </article>
+                    <article>
+                        <h3
+                            class="flex items-center font-bold leading-none tracking-tight text-primary sm:text-xl md:text-3xl"
+                        >
+                            <span>Spracovanie dát</span>
+                            <img
+                                src="../img/icons/speech_to_text_360.png"
+                                alt="Ikona - ASR"
+                                class="ml-4 h-[64px] w-[100px]"
+                            />
+                        </h3>
+                        <p class="text-sm sm:text-base lg:text-xl">
+                            V spontánnej reči sa objavujú okrem slov aj iné
+                            zvukové prejavy ako smiech, hmkanie, kašlanie, pauzy
+                            a pod. Anotácia znamená ručný prepis hlasového
+                            prejavu do textu s vyznačením týchto sprievodných
+                            zvukových prejavov. Anotácie sú jednou z fáz pri
+                            príprave nástroja umelej inteligencie pre prevod
+                            reči do textu – ASR (Automatic Speech Recognition).
+                            Následne boli rečové prejavy podrobené akustickej
+                            analýze, ktorá vyťažila zo zvukových záznamov stovky
+                            parametrov ako dĺžka, hlasitosť, rôzne druhy
+                            frekvencií, farba hlasu a iné. Z lingvistickej
+                            analýzy sa určili tzv. NLP (Natural Language
+                            Processing) parametre ako počty plnovýznamových
+                            slov, rôznych slovných druhov, rôzne lexikálne a
+                            sémantické parametre.
+                        </p>
+                    </article>
+                    <article>
+                        <h3
+                            class="flex items-center font-bold leading-none tracking-tight text-primary sm:text-xl md:text-3xl"
+                        >
+                            <span> Vyhodnocovanie parametrov </span>
+                            <img
+                                src="../img/artboard_1_10.png"
+                                alt="Ikona - Vyhodnocovanie dát"
+                                class="h-[64px] w-[64px]"
+                            />
+                        </h3>
+                        <p class="text-sm sm:text-base lg:text-xl">
+                            Z jednej nahrávky, ktorá obsahovala popis 65
+                            obrázkov, teda 65 rozličných rečových prejavov
+                            vzniklo vyše 100 000 parametrov, ktoré boli použité
+                            v rôznych metódach počítačových algoritmov a umelej
+                            inteligencie ako lineárna regresia, Random Forest a
+                            neurónové siete. Pomocou týchto metód s vedomím
+                            toho, či išlo o nahrávku človeka zdravého alebo s
+                            diagnózou sa dosiahla schopnosť počítača rozlíšiť s
+                            vysokou pravdepodobnosťou o akú nahrávku ide. Ďalším
+                            výsledkom výskumu boli zaujímavé štatistické
+                            charakteristiky.
+                        </p>
+                    </article>
                 </div>
             </main>
 
@@ -239,7 +263,7 @@
                         class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
                     ></div>
                 </div>
-                <div class="w-full bg-light-gray py-6">
+                <div class="w-full bg-light-gray py-4">
                     <div
                         class="grid items-center space-y-8 text-center md:grid-cols-2 md:space-y-0"
                     >
@@ -273,14 +297,6 @@
             </footer>
         </div>
 
-        <script>
-            var burgerMenu = document.getElementById("burger-menu");
-            var mobileMenu = document.getElementById("mobile-menu");
-
-            burgerMenu.addEventListener("click", function () {
-                mobileMenu.classList.toggle("hidden");
-                burgerMenu.classList.toggle("close");
-            });
-        </script>
+        <script src="/main.js"></script>
     </body>
 </html>
