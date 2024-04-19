@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="../../../img/logo_fialove.png" />
+        
+        <link rel="stylesheet" href="../../../lato.css" />
+        <title>Project EWA - Alzheimer´s disease</title>
+      <link rel="stylesheet" href="../../../assets/style-c814615a.css">
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 items-center justify-between bg-primary py-4 text-secondary sm:px-5 md:flex md:px-10 md:py-5 lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Project EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/en/index.html" class="block">
+                            <img
+                                src="../../../img/logobiele.png"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[30px] w-[100px] lg:h-[40px] lg:w-[140px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 md:block">
+                    <ol
+                        class="flex justify-between space-x-6 lg:space-x-14"
+                        role="menu"
+                    >
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Home</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/about-ewa/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >About EWA</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/app.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >App</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/alzheimer/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block lg:text-xl"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/contact.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Contact</a
+                            >
+                        </li>
+                        <li role="presentation" class="relative">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
+                                >EN</a
+                            >
+                            <a
+                                href="/"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
+                            >
+                                <span
+                                    class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
+                                ></span>
+                                <span class="relative z-10 block bg-secondary">
+                                    SK
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 md:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Home</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/about-ewa/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >About EWA</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/app.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >App</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/alzheimer/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/contact.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Contact</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >SK</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
+                role="document"
+            >
+                <div class="max-w-[80em] space-y-6">
+                    <h2
+                        class="text-xl font-bold leading-none tracking-tight text-primary md:text-3xl lg:text-5xl"
+                    >
+                        Alzheimer´s disease
+                    </h2>
+                    <p class="text-sm sm:text-base lg:text-xl">
+                        Alzheimer´s disease begins slowly and subtly, gradually
+                        the first symptoms are joined by others. The changes
+                        caused by the disease affect all areas of life and
+                        fundamentally affect a person's entire personality.
+                    </p>
+                    <h3
+                        class="font-bold leading-none tracking-tight sm:text-xl md:text-3xl"
+                    >
+                        The main areas of disease manifestations
+                    </h3>
+                    <ul
+                        class="list-disc space-y-1 pl-10 text-sm font-bold text-primary lg:text-base"
+                    >
+                        <li>
+                            Impaired learning: Difficulty retaining new
+                            information
+                        </li>
+                        <li>
+                            Word-finding problems: Struggling to recall the
+                            correct words, substituting them with others
+                        </li>
+                        <li>
+                            Changes in communication: Shifts in facial
+                            expressions and difficulty expressing oneself
+                            clearly
+                        </li>
+                        <li>
+                            Disrupted thought flow: Incomplete sentences and
+                            thoughts
+                        </li>
+                        <li>
+                            Repetitive speech: Frequent repetition of words or
+                            phrases
+                        </li>
+                        <li>
+                            Disorientation: Difficulty with time and place
+                            awareness
+                        </li>
+                    </ul>
+
+                    <article class="space-y-3">
+                        <h3
+                            class="font-bold leading-none tracking-tight sm:text-xl md:text-3xl"
+                        >
+                            Life with Alzheimer's disease
+                        </h3>
+                        <ol
+                            class="list-inside list-decimal space-y-1 text-sm font-bold lg:text-base"
+                        >
+                            <li class="group relative w-fit">
+                                <span
+                                    class="duration-600 pointer-events-none absolute right-0 top-0 max-w-lg -translate-y-full rounded border border-gray-400 bg-white p-1 px-2 text-xs text-black opacity-0 shadow-lg transition-all group-hover:-translate-y-[110%] group-hover:opacity-100"
+                                    >read more</span
+                                >
+                                <a
+                                    href="https://www.bbc.com/news/health-67703848"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    In France, they have created a village where
+                                    only people with Alzheimer's live
+                                </a>
+                            </li>
+                            <li class="group relative w-fit">
+                                <span
+                                    class="duration-600 pointer-events-none absolute right-0 top-0 max-w-lg -translate-y-full rounded border border-gray-400 bg-white p-1 px-2 text-xs text-black opacity-0 shadow-lg transition-all group-hover:-translate-y-[110%] group-hover:opacity-100"
+                                    >read more</span
+                                >
+                                <a
+                                    href="https://www.alz.org/help-support/i-have-alz/younger-onset"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    A young age for such a diagnosis
+                                </a>
+                            </li>
+                            <li class="group relative w-fit">
+                                <span
+                                    class="duration-600 pointer-events-none absolute right-0 top-0 max-w-lg -translate-y-full rounded border border-gray-400 bg-white p-1 px-2 text-xs text-black opacity-0 shadow-lg transition-all group-hover:-translate-y-[110%] group-hover:opacity-100"
+                                    >read more</span
+                                >
+                                <a
+                                    href="https://www.sciencealert.com/the-mysterious-case-of-the-youngest-person-ever-diagnosed-with-alzheimers"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Stories of people with Alzheimer's disease,
+                                    the youngest was 19 years old
+                                </a>
+                            </li>
+                            <li class="group relative w-fit">
+                                <span
+                                    class="duration-600 pointer-events-none absolute right-0 top-0 max-w-lg -translate-y-full rounded border border-gray-400 bg-white p-1 px-2 text-xs text-black opacity-0 shadow-lg transition-all group-hover:-translate-y-[110%] group-hover:opacity-100"
+                                    >read more</span
+                                >
+                                <a
+                                    href="https://www.ted.com/speakers/alanna_shaikh"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Global health expert and TED speaker Alanna
+                                    Shaikh spoke about her personal experience
+                                    caring for her father with Alzheimer's
+                                </a>
+                            </li>
+                            <li class="group relative w-fit">
+                                <span
+                                    class="duration-600 pointer-events-none absolute right-0 top-0 max-w-lg -translate-y-full rounded border border-gray-400 bg-white p-1 px-2 text-xs text-black opacity-0 shadow-lg transition-all group-hover:-translate-y-[110%] group-hover:opacity-100"
+                                    >read more</span
+                                >
+                                <a
+                                    href="https://www.youtube.com/watch?v=a11cO-ylQMA"
+                                    target="_blank"
+                                    class="text-black"
+                                >
+                                    Techniques for effective communication with
+                                    Alzheimer's patients
+                                </a>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <article class="space-y-3">
+                        <h3
+                            class="font-bold leading-none tracking-tight sm:text-xl md:text-3xl"
+                        >
+                            Mental health support
+                        </h3>
+                        <p class="text-sm sm:text-base lg:text-xl">
+                            Alzheimer's disease can cause rapid mood swings,
+                            with a person shifting from hostility and crying to
+                            aggression and paranoia. They may also lose interest
+                            in social activities and become withdrawn. To
+                            counteract this, providing new and engaging
+                            stimulation is crucial.
+                        </p>
+                        <a
+                            href="/en/alzheimer/disease/support.html"
+                            class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                            >read more&hellip;</a
+                        >
+                    </article>
+
+                    <article class="space-y-3">
+                        <h3
+                            class="font-bold leading-none tracking-tight sm:text-xl md:text-3xl"
+                        >
+                            Mental health practice
+                        </h3>
+                        <p class="text-sm sm:text-base lg:text-xl">
+                            Medications can offer temporary relief from
+                            Alzheimer's symptoms, but they cannot cure the
+                            disease. With no current cure, early diagnosis,
+                            preventative measures, and mental health support for
+                            both patients and caregivers become crucial.
+                        </p>
+                        <a
+                            href="/en/alzheimer/disease/practice.html"
+                            class="inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:bg-emphasis hover:text-black"
+                            >read more&hellip;</a
+                        >
+                    </article>
+                </div>
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-light-gray py-4">
+                    <div
+                        class="grid items-center space-y-8 text-center md:grid-cols-2 md:space-y-0"
+                    >
+                        <div
+                            class="space-y-8 md:flex md:justify-around md:space-y-0"
+                        >
+                            <div>
+                                <a
+                                    href="/footer/gdpr.html"
+                                    class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >GDPR</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="/footer/zasady.html"
+                                    class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >Privacy policy</a
+                                >
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                href="/en/index.html"
+                                class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black md:float-right md:mr-24"
+                                >Home</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="/main.js"></script>
+    </body>
+</html>
