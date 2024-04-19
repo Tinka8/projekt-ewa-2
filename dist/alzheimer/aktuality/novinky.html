@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="../../img/logo_fialove.png" />
+        
+        <link rel="stylesheet" href="../../lato.css" />
+        <title>Projekt EWA - Novinky</title>
+      <script type="module" crossorigin src="../../assets/style-ff2fbb98.js"></script>
+      <script type="module" crossorigin src="../../assets/main-a2a02cea.js"></script>
+      <link rel="stylesheet" href="../../assets/style-c814615a.css">
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 items-center justify-between bg-primary py-4 text-secondary sm:px-5 md:flex md:px-10 md:py-5 lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img
+                                src="../../img/logobiele.png"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[30px] w-[100px] lg:h-[40px] lg:w-[140px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 md:block">
+                    <ol
+                        class="flex justify-between space-x-6 lg:space-x-14"
+                        role="menu"
+                    >
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block lg:text-xl"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Kontakt</a
+                            >
+                        </li>
+                        <li role="presentation" class="relative">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
+                                >SK</a
+                            >
+                            <a
+                                href="/en/index.html"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
+                            >
+                                <span
+                                    class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
+                                ></span>
+                                <span class="relative z-10 block bg-secondary">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 md:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >EN</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
+                role="document"
+            >
+                <div class="space-y-12">
+                    <h2
+                        class="text-xl font-bold leading-none tracking-tight text-primary md:text-3xl lg:text-5xl"
+                    >
+                        Novinky
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 gap-20 px-5 sm:grid-cols-2 md:px-10 lg:grid-cols-4"
+                    >
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/vcasna-diagnostika.png"
+                                alt="Včasná diagnostika a nové možnosti liečby"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Včasná diagnostika a nové možnosti liečby
+                                    dokážu spomaliť pokles kognitívnych
+                                    funkcií...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://vedanadosah.cvtisr.sk/zdravie/technologie-na-principe-hlbkoveho-ucenia-urychlia-diagnostiku-alzheimerovej-choroby/"
+                                    target="_blank"
+                                    >https://vedanadosah.cvtisr.sk/</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/symptomy-choroby.png"
+                                alt="Symptómy Alzheimerovej choroby u niektorých pacientov"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Symptómy Alzheimerovej choroby u niektorých
+                                    pacientov môže zhoršiť vystavenie sa svetlu
+                                    v nevhodný denný čas...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://tech.sme.sk/c/23200440/alzheimerovu-chorobu-mozu-zhorsit-aj-nespravne-svetelne-zmeny-pocas-dna.html"
+                                    target="_blank"
+                                    >https://tech.sme.sk/</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/crevne-mikroby.png"
+                                alt="Črevné mikróby môžu varovať pred Alzheimerom"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Črevné mikróby môžu varovať pred Alzheimerom
+                                    skôr, ako sa objavia prvé príznaky...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://primar.sme.sk/c/23184873/crevne-mikroby-mozu-varovat-pred-alzheimerom-skor-ako-sa-objavia-prve-priznaky.html"
+                                    target="_blank"
+                                    >https://primar.sme.sk</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/lilly.png"
+                                alt="Ľudstvo sa podľa odborníkov blíži k momentu"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Ľudstvo sa podľa odborníkov blíži k momentu,
+                                    keď bude možné liečiť Alzheimera...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://svet.sme.sk/c/23164858/ludstvo-sa-podla-odbornikov-blizi-k-momentu-ked-bude-mozne-liecit-alzheimera.html"
+                                    target="_blank"
+                                    >https://svet.sme.sk</a
+                                >
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-1 gap-20 px-5 sm:grid-cols-2 md:px-10 lg:grid-cols-4"
+                    >
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/nemocnica-agel.png"
+                                alt="Rozhovor s primárkou oddelenia"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    O tomto vážnom degeneratívnom ochorení mozgu
+                                    porozprávala primárka oddelenia...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://nemocnicahandlova.agel.sk/o-nemocnici/novinky/230920-alzheimer.html"
+                                    target="_blank"
+                                    >https://nemocnicahandlova.agel.sk</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/co-ste-si-mysleli.png"
+                                alt="Čo ste si možno mysleli o Alzheimerovej chorobe"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Čo ste si možno mysleli o Alzheimerovej
+                                    chorobe, ale nie je to pravda...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://www.zaujimavysvet.sk/pravda-o-alzheimerovej-chorobe/"
+                                    target="_blank"
+                                    >https://www.zaujimavysvet.sk</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/neochoriet-na.png"
+                                alt="Neochorieť na Alzheimerovú chorobu"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Neochorieť na Alzheimerovú chorobu je
+                                    ľahšie, ako si možno myslíte...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://domacaliecba.sk/neochoriet-na-alzheimerovu-chorobu-je-lahsie-ako-si-mozno-myslite/"
+                                    target="_blank"
+                                    >https://domacaliecba.sk</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/alzheimerova-choroba.png"
+                                alt="Alzheimerova choroba postihuje čoraz mladších ľudí"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Alzheimerova choroba postihuje čoraz
+                                    mladších ľudí. Správy od našich susedov sú
+                                    alarmujúce...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://news.refresher.sk/145069-Alzheimerova-choroba-postihuje-coraz-mladsich-ludi-Spravy-od-nasich-susedov-su-alarmujuce"
+                                    target="_blank"
+                                    >https://news.refresher.sk</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/mechanizmy-yt.png"
+                                alt="Mechanizmy a tajomstvá Alzheimerovej choroby"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Mechanizmy a tajomstvá Alzheimerovej
+                                    choroby: skúmanie mozgu...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://www.youtube.com/watch?v=dj3GGDuu15I&t=13s"
+                                    target="_blank"
+                                    >https://www.youtube.com</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/zachytenie-choroby.png"
+                                alt="Alzheimerovu chorobu je nutné zachytit včas"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Prečo je nutné zachytiť Alzheimerovu chorobu
+                                    včas...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://www.novinky.cz/clanek/zena-zdravi-alzheimerovu-chorobu-je-nutne-zachytit-vcas-40422639"
+                                    target="_blank"
+                                    >https://www.novinky.cz</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/zahranicne-amerika.png"
+                                alt="V USA schválili liek, ktorý môže spomaliť Alzheimera"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    V USA schválili liek, ktorý môže spomaliť
+                                    Alzheimera...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://www.novinky.cz/clanek/zahranicni-amerika-v-usa-schvalili-leqembi-zpomaluje-alzheimera-40419508"
+                                    target="_blank"
+                                    >https://www.novinky.cz</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/mozgove-vlny.png"
+                                alt="Vznik Alzheimerovej choroby"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Vznik Alzheimerovej choroby súvisí s
+                                    hromadením amyloidu beta, ale aj s narušením
+                                    mozgových vĺn...
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://www.kingray.sk/a/alzheimerova-choroba-najnovsie-vedecke-studie"
+                                    target="_blank"
+                                    >https://www.kingray.sk</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/reconvel.png"
+                                alt="Bioaktívny ultrafiltrát"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Bioaktívny ultrafiltrát napomáha celkovej
+                                    revitalizácii Centrálneho Nervového Systému
+                                    (CNS). Výživový doplnok na komplexnú
+                                    revitalizáciu nervového systému a podporu
+                                    mozgovej činnosti.
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://www.reconvel.sk/vyzivove-doplnky-na-regeneraciu/ns-revital/?fbclid=IwAR0bzC1WlFXVR2Lq9CIgRWwJA6ytV3ChqQbMvxb299cuvwMOrpzKEy52zLI"
+                                    target="_blank"
+                                    >https://www.reconvel.sk</a
+                                >
+                            </span>
+                        </div>
+
+                        <div class="max-w-xs space-y-2">
+                            <img
+                                src="../../img/alzheimer/novinky/zmyslova-stimulacia.png"
+                                alt="missing image"
+                            />
+                            <ul
+                                class="list-disc text-sm font-bold text-primary sm:text-base lg:text-xl"
+                            >
+                                <li>
+                                    Zmyslová stimulácia u ľudí s Alzheimerovou
+                                    chorobou.
+                                </li>
+                            </ul>
+                            <span>
+                                <a
+                                    href="https://3lobit.sk/zmyslova-stimulacia-alzheimer-demencia/?fbclid=IwAR0R2Ahr3f7fKfZGqAkb2Ms2-xRh4Lf2ygH_CUyD80ViEe7d0xY0itNDI-o"
+                                    target="_blank"
+                                    >https://www.3lobit.sk</a
+                                >
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-light-gray py-4">
+                    <div
+                        class="grid items-center space-y-8 text-center md:grid-cols-2 md:space-y-0"
+                    >
+                        <div
+                            class="space-y-8 md:flex md:justify-around md:space-y-0"
+                        >
+                            <div>
+                                <a
+                                    href="/footer/gdpr.html"
+                                    class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >GDPR</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="/footer/zasady.html"
+                                    class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >Zásady ochrany osobných údajov</a
+                                >
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                href="/"
+                                class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black md:float-right md:mr-24"
+                                >Domov</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        
+    </body>
+</html>
