@@ -1,4 +1,4 @@
-// burger menu
+// Burger menu
 var burgerMenu = document.getElementById("burger-menu");
 var mobileMenu = document.getElementById("mobile-menu");
 
@@ -7,8 +7,7 @@ burgerMenu.addEventListener("click", function () {
     burgerMenu.classList.toggle("close");
 });
 
-
-// language switch button 
+// Language switch button
 var languageSwitcherOpener = document.getElementById(
     "language-switcher-opener",
 );
@@ -29,4 +28,20 @@ document.addEventListener("click", function (event) {
     ) {
         languageSwitcher.classList.add("hidden");
     }
+});
+
+// Collapsible elements
+
+var collapsibles = document.querySelectorAll("[data-collapse]");
+
+collapsibles.forEach(function (collapsible) {
+    collapsible.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var target = document.querySelector(
+            collapsible.getAttribute("data-collapse"),
+        );
+
+        target.classList.toggle("hidden");
+    });
 });
