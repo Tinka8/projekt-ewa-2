@@ -10,6 +10,7 @@ burgerMenu.addEventListener("click", function () {
 // Language switch button
 var languageSwitcherOpener = document.getElementById(
     "language-switcher-opener",
+    
 );
 
 languageSwitcherOpener.addEventListener("click", function (event) {
