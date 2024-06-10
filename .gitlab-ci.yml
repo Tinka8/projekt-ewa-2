@@ -1,0 +1,45 @@
+image:
+  name: node:latest
+  entrypoint: [""]
+
+stages:
+  - build
+  - deploy
+
+test:
+  stage: build
+  script:
+    - yarn
+  except:
+    - prod
+
+job_yarn:
+  stage: build
+  script:
+    - npm install vite
+    - yarn build
+    - find -ls
+  artifacts:
+    paths:
+      - dist/
+  only:
+    - prod
+
+job_rsync:
+  stage: deploy
+  dependencies:
+    - job_yarn
+  script:
+    - export HOME=/root
+    - 'which ssh-agent || ( apt-get update -y && apt-get install -qq openssh-client -y )'
+    - 'which rsync || ( apt-get update -y && apt-get install -qq rsync -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | base64 -d | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - rsync -a --delete dist/ $SSH_USER@$SSH_HOST:$SSH_PATH/
+  only:
+    - prod
+
