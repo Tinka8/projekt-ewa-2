@@ -23,13 +23,13 @@ a:hover {
 
 .ol-primary {
     list-style: none;
-    counter-reset: my-awesome-counter;
+    counter-reset: ol-primary;
 }
 .ol-primary li {
-    counter-increment: my-awesome-counter;
+    counter-increment: ol-primary;
 }
 .ol-primary li::before {
-    content: counter(my-awesome-counter) ". ";
+    content: counter(ol-primary) ". ";
     color: #7e01ff;
     font-weight: bold;
 }
