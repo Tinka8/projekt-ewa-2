@@ -21,6 +21,19 @@ a:hover {
     list-style-type: "- ";
 }
 
+.ol-primary {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+.ol-primary li {
+    counter-increment: my-awesome-counter;
+}
+.ol-primary li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: #7e01ff;
+    font-weight: bold;
+}
+
 @media (max-width: 767px) {
     #burger-menu {
         cursor: pointer;
