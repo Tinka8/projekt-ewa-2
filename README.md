@@ -30,6 +30,5 @@ composer install
 
 | Setting                 | Description                 | File             |
 | ----------------------- | --------------------------- | ---------------- |
-| `SENDGRID_API_KEY`      | SendGrid.com API Key        | dist/kontakt.php |
 | `GRECAPTCHA_SECRET_KEY` | Google Recaptcha secret key | dist/kontakt.php |
 | `GRECAPTCHA_SITE_KEY`   | Google Recaptcha site key   | src/kontakt.html |
