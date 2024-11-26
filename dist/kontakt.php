@@ -22,9 +22,17 @@
 $from = 'ewa@axonpro.sk';
 $to = 'ewa@axonpro.sk';
 $subject = 'Nová správa z kontaktného formulára';
-$sendgridApiKey = '{SENDGRID_API_KEY}';   // Fill SendGrid API key
 $currentLanguage = 'sk';
 $googleRecaptchaSecret = '{GRECAPTCHA_SECRET_KEY}'; // Fill Google Recaptcha secret key
+$isDev = str_contains($_SERVER['HTTP_HOST'], 'localhost') || str_contains($_SERVER['HTTP_HOST'], '.test');
+
+$smtp = [
+    'host' => 'sandbox.smtp.mailtrap.io',
+    'username' => '1bc9ec8cb756a1',
+    'password' => 'd8ce7a7f037af7',
+    'port' => 465,
+    'secure' => 'tls'
+];
 
 /*
 |--------------------------------------------------------------------------
@@ -107,46 +115,55 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['note'] = $lang[$currentLanguage]['validation']['message']['required'];
     }
 
-    $recaptchaResponse = $_POST['recaptcha_response'];
+    // Do not check recaptcha in development environment.
+    if (!$isDev) {
+        $recaptchaResponse = $_POST['recaptcha_response'];
 
-    // Check for spam.
-    $recaptcha = new \ReCaptcha\ReCaptcha($googleRecaptchaSecret);
-    $resp = $recaptcha->setExpectedHostname('projektewa.sk')
-        ->verify($recaptchaResponse, $_SERVER['REMOTE_ADDR']);
+        // Check for spam.
+        $recaptcha = new \ReCaptcha\ReCaptcha($googleRecaptchaSecret);
+        $resp = $recaptcha->setExpectedHostname('projektewa.sk')
+            ->verify($recaptchaResponse, $_SERVER['REMOTE_ADDR']);
 
-    if (!$resp->isSuccess()) {
-        $errors['recaptcha'] = $lang[$currentLanguage]['validation']['recaptcha'];
-    }
+        if (!$resp->isSuccess()) {
+            $errors['recaptcha'] = $lang[$currentLanguage]['validation']['recaptcha'];
+        }
 
-    // If there are errors, return errors.
-    if (!empty($errors)) {
-        // echo json_encode(['errors' => $errors]);
-        header('Location: /kontakt.html');
-        exit;
+        // If there are errors, return errors.
+        if (!empty($errors)) {
+            throw new Exception('Wrong captcha code');
+            exit;
+        }
     }
 
     // If there are no errors, send email.
-    $mail = new SendGrid\Mail\Mail();
+    $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+    $mail->SMTPDebug = PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;
+    $mail->isSMTP();
+    $mail->SMTPAuth   = true;
+    $mail->Host = $smtp['host'];
+    $mail->Username = $smtp['username'];
+    $mail->Password = $smtp['password'];
+    $mail->Port = $smtp['port'] ?? 465;
+    $mail->SMTPSecure = $smtp['secure'] ?? 'tls';
+    $mail->CharSet = "UTF-8";
+    $mail->Encoding = 'base64';
+
+    $mail->isHTML(true);
     $mail->setFrom($from);
-    $mail->setSubject($subject);
-    $mail->addTo($to);
-    $mail->addContent(
-        "text/html",
+    $mail->addAddress($to);
+
+    $mail->Subject = $subject;
+    $mail->Body =
         "<strong>Meno:</strong> $name <br>
         <strong>Priezvisko:</strong> $lastname <br>
         <strong>Email:</strong> $email <br>
         <strong>Telefón:</strong> $phone <br>
-        <strong>Správa:</strong> $note"
-    );
-
-    $sendgrid = new SendGrid($sendgridApiKey);
+        <strong>Správa:</strong> $note";
 
     try {
-        $response = $sendgrid->send($mail);
-        // echo json_encode(['success' => $lang[$currentLanguage]['sent']]);
+        $response = $mail->send();
         header('Location: /kontakt.html');
     } catch (Exception $e) {
-        // echo json_encode(['errors' => [$lang[$currentLanguage]['failure']]]);
         header('Location: /kontakt.html');
         exit;
     }
