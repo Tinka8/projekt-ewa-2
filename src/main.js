@@ -10,7 +10,6 @@ burgerMenu.addEventListener("click", function () {
 // Language switch button
 var languageSwitcherOpener = document.getElementById(
     "language-switcher-opener",
-    
 );
 
 languageSwitcherOpener.addEventListener("click", function (event) {
@@ -33,6 +32,7 @@ document.addEventListener("click", function (event) {
 
 // Collapsible elements
 
+/*
 var collapsibles = document.querySelectorAll("[data-collapse]");
 
 collapsibles.forEach(function (collapsible) {
@@ -44,5 +44,30 @@ collapsibles.forEach(function (collapsible) {
         );
 
         target.classList.toggle("hidden");
+    });
+});
+*/
+
+// Accordion
+
+var accordions = document.querySelectorAll("[data-accordion]");
+
+accordions.forEach(function (accordion) {
+    var groups = accordion.querySelectorAll(".group");
+
+    groups.forEach(function (group) {
+        group.addEventListener("click", function () {
+            var isExpanded = group.getAttribute("aria-expanded") === "true";
+
+            if (isExpanded) {
+                group.setAttribute("aria-expanded", "false");
+            } else {
+                groups.forEach(function (group) {
+                    group.setAttribute("aria-expanded", "false");
+                });
+
+                group.setAttribute("aria-expanded", "true");
+            }
+        });
     });
 });
