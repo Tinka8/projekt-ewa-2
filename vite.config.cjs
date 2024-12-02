@@ -11,25 +11,27 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: resolve(__dirname, "src/index.html"),
-                kontakt: resolve(__dirname, "src/kontakt.html"),
                 aplikacia: resolve(__dirname, "src/aplikacia.html"),
+                media: resolve(__dirname, "src/media.html"),
+                kontakt: resolve(__dirname, "src/kontakt.html"),
 
                 aktualityIndex: resolve(
                     __dirname,
                     "src/alzheimer/aktuality/index.html",
                 ),
-                aktualityNovinky: resolve(
+                aktualityClanky: resolve(
                     __dirname,
-                    "src/alzheimer/aktuality/novinky.html",
+                    "src/alzheimer/aktuality/clanky.html",
                 ),
-                aktualityPodkasty: resolve(
+                aktualityRozhovory: resolve(
                     __dirname,
-                    "src/alzheimer/aktuality/podkasty.html",
+                    "src/alzheimer/aktuality/rozhovory.html",
                 ),
-                aktualityPublikacie: resolve(
+                aktualityKnihy: resolve(
                     __dirname,
-                    "src/alzheimer/aktuality/publikacie.html",
+                    "src/alzheimer/aktuality/knihy.html",
                 ),
+
                 alzheimerPodpora: resolve(
                     __dirname,
                     "src/alzheimer/alzheimerova-choroba/podpora.html",
@@ -48,16 +50,11 @@ export default defineConfig({
                 footerZasady: resolve(__dirname, "src/footer/zasady.html"),
 
                 oprojekteIndex: resolve(__dirname, "src/o-projekte/index.html"),
-                oprojekteMedia: resolve(__dirname, "src/o-projekte/media.html"),
-                oprojekteTim: resolve(__dirname, "src/o-projekte/tim.html"),
-                oprojekteVyskum: resolve(
-                    __dirname,
-                    "src/o-projekte/vyskum.html",
-                ),
 
                 indexEn: resolve(__dirname, "src/en/index.html"),
-                contact: resolve(__dirname, "src/en/contact.html"),
                 app: resolve(__dirname, "src/en/app.html"),
+                mediaEn: resolve(__dirname, "src/en/media.html"),
+                contact: resolve(__dirname, "src/en/contact.html"),
 
                 alzheimerIndexEn: resolve(
                     __dirname,
@@ -104,17 +101,6 @@ export default defineConfig({
                     "src/en/about-ewa/index.html",
                 ),
 
-                aboutEwaMedia: resolve(
-                    __dirname,
-                    "src/en/about-ewa/media.html",
-                ),
-
-                aboutEwaResearch: resolve(
-                    __dirname,
-                    "src/en/about-ewa/research.html",
-                ),
-
-                aboutEwaTeam: resolve(__dirname, "src/en/about-ewa/team.html"),
                 main: resolve(__dirname, "src/main.js"),
             },
         },

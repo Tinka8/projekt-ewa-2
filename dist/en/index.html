@@ -7,9 +7,9 @@
         
         <link rel="stylesheet" href="../lato.css" />
         <title>Project EWA</title>
-      <script type="module" crossorigin src="../assets/style-ff2fbb98.js"></script>
-      <script type="module" crossorigin src="../assets/main-1e643c6c.js"></script>
-      <link rel="stylesheet" href="../assets/style-c814615a.css">
+      <script type="module" crossorigin src="../assets/style-4ad160af.js"></script>
+      <script type="module" crossorigin src="../assets/main-88f2c26f.js"></script>
+      <link rel="stylesheet" href="../assets/style-17b5d768.css">
     </head>
 
     <body>
@@ -70,6 +70,14 @@
                                 href="/en/alzheimer/index.html"
                                 class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/media.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Media</a
                             >
                         </li>
                         <li role="presentation">
@@ -142,6 +150,14 @@
                         <li role="presentation">
                             <a
                                 role="menuitem"
+                                href="/en/media.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Media</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
                                 href="/en/contact.html"
                                 class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Contact</a
@@ -170,6 +186,7 @@
                             src="../img/logo_black.svg"
                             alt="Projekt EWA - Logo čierne"
                             class="ml-2 h-[100px] w-[160px] md:ml-6 md:h-[180px] md:w-[350px]"
+                            draggable="false"
                         />
 
                         <h2
@@ -180,7 +197,7 @@
                         </h2>
 
                         <div class="max-w-[37em] pl-5 md:pl-[55px]">
-                            <video autoplay muted>
+                            <video controls autoplay muted>
                                 <source
                                     src="../reklamne_final.mp4"
                                     type="video/mp4"
@@ -209,11 +226,13 @@
                         <div
                             class="flex h-[100px] w-full items-center justify-center md:h-[180px] 2xl:w-[600px]"
                         >
-                            <button
-                                class="rounded-xl bg-secondary px-10 py-2 font-semibold hover:bg-emphasis"
+                            <a
+                                href="https://play.google.com/store/apps/details?id=sk.axonpro.ewa"
+                                target="_blank"
+                                class="rounded-xl bg-secondary px-10 py-2 font-semibold text-black hover:bg-emphasis hover:text-black"
                             >
                                 Download here
-                            </button>
+                            </a>
                         </div>
                         <img
                             src="../img/illu_navrh.png"
@@ -266,5 +285,19 @@
         </div>
 
         
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-6S21PS4SR8"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-6S21PS4SR8");
+        </script>
     </body>
 </html>

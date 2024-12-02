@@ -7,9 +7,9 @@
         
         <link rel="stylesheet" href="./lato.css" />
         <title>Projekt EWA</title>
-      <script type="module" crossorigin src="./assets/style-ff2fbb98.js"></script>
-      <script type="module" crossorigin src="./assets/main-1e643c6c.js"></script>
-      <link rel="stylesheet" href="./assets/style-c814615a.css">
+      <script type="module" crossorigin src="./assets/style-4ad160af.js"></script>
+      <script type="module" crossorigin src="./assets/main-88f2c26f.js"></script>
+      <link rel="stylesheet" href="./assets/style-17b5d768.css">
     </head>
 
     <body>
@@ -70,6 +70,14 @@
                                 href="/alzheimer/index.html"
                                 class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
                                 >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/media.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Média</a
                             >
                         </li>
                         <li role="presentation">
@@ -142,6 +150,14 @@
                         <li role="presentation">
                             <a
                                 role="menuitem"
+                                href="/media.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Média</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
                                 href="/kontakt.html"
                                 class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
                                 >Kontakt</a
@@ -170,6 +186,7 @@
                             src="./img/logo_black.svg"
                             alt="Projekt EWA - Logo čierne"
                             class="ml-2 h-[100px] w-[160px] md:ml-6 md:h-[180px] md:w-[350px]"
+                            draggable="false"
                         />
 
                         <h2
@@ -178,16 +195,14 @@
                             Chráňte si poklad, ktorý nosíte v hlave: spomienky a
                             zdravú myseľ
                         </h2>
-
                         <div class="max-w-[37em] pl-5 md:pl-[55px]">
-                            <video autoplay muted>
+                            <video controls autoplay muted>
                                 <source
                                     src="./reklamne_final.mp4"
                                     type="video/mp4"
                                 />
                             </video>
                         </div>
-
                         <div>
                             <h3
                                 class="py-2 pl-5 font-bold leading-none tracking-tight sm:text-xl md:pl-[55px] md:text-2xl"
@@ -209,11 +224,13 @@
                         <div
                             class="flex h-[100px] w-full items-center justify-center md:h-[180px] 2xl:w-[600px]"
                         >
-                            <button
-                                class="rounded-xl bg-secondary px-10 py-2 font-semibold hover:bg-emphasis"
+                            <a
+                                href="https://play.google.com/store/apps/details?id=sk.axonpro.ewa"
+                                target="_blank"
+                                class="rounded-xl bg-secondary px-10 py-2 font-semibold text-black hover:bg-emphasis hover:text-black"
                             >
                                 Stiahnuť tu
-                            </button>
+                            </a>
                         </div>
                         <img
                             src="./img/illu_navrh.png"
@@ -228,7 +245,7 @@
             <footer role="contentinfo">
                 <div class="flex justify-center pb-4 pt-2">
                     <div
-                        class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
+                        class="mx-5 h-[10px] w-1/2 rounded-full bg-primary sm:w-full md:h-[15px]"
                     ></div>
                 </div>
                 <div class="w-full bg-light-gray py-4">
@@ -266,5 +283,19 @@
         </div>
 
         
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-6S21PS4SR8"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-6S21PS4SR8");
+        </script>
     </body>
 </html>
