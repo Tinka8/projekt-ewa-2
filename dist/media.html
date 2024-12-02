@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./img/logo_fialove.png" />
+        
+        <link rel="stylesheet" href="./lato.css" />
+        <title>Projekt EWA - Média</title>
+      <script type="module" crossorigin src="./assets/style-4ad160af.js"></script>
+      <script type="module" crossorigin src="./assets/main-88f2c26f.js"></script>
+      <link rel="stylesheet" href="./assets/style-17b5d768.css">
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex-grow-0 items-center justify-between bg-primary py-4 text-secondary sm:px-5 md:flex md:px-10 md:py-5 lg:px-[60px]"
+            >
+                <!-- Logo -->
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img
+                                src="./img/logobiele.png"
+                                alt="Projekt EWA - Logo biele"
+                                class="h-[30px] w-[100px] lg:h-[40px] lg:w-[140px]"
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden flex-grow-0 md:block">
+                    <ol
+                        class="flex justify-between space-x-6 lg:space-x-14"
+                        role="menu"
+                    >
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block lg:text-xl"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/media.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Média</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                >Kontakt</a
+                            >
+                        </li>
+                        <li role="presentation" class="relative">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="hidden whitespace-nowrap text-base font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block lg:text-xl"
+                                id="language-switcher-opener"
+                                >SK</a
+                            >
+                            <a
+                                href="/en/index.html"
+                                class="absolute left-1/2 top-full mt-2 hidden -translate-x-1/2 rounded bg-secondary px-4 py-1 font-bold text-primary"
+                                id="language-switcher"
+                            >
+                                <span
+                                    class="absolute -top-1 left-1/2 block h-4 w-4 -translate-x-1/2 rotate-45 transform bg-secondary"
+                                ></span>
+                                <span class="relative z-10 block bg-secondary">
+                                    EN
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Mobile navigation -->
+                <nav class="hidden flex-grow-0 md:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-white underline hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/aplikacia.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/alzheimer/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/media.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Média</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/en/index.html"
+                                class="block whitespace-nowrap px-2 py-5 text-center text-base font-medium leading-none tracking-tight text-secondary underline hover:text-white"
+                                >EN</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main
+                class="min-h-screen px-5 pb-[60px] pt-[120px] md:px-10 lg:px-[120px] lg:py-[140px]"
+                role="document"
+            >
+                <div class="max-w-[80em] space-y-10">
+                    <article class="space-y-10">
+                        <h2
+                            class="text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-5xl"
+                        >
+                            Média
+                        </h2>
+                        <p class="text-sm sm:text-base lg:text-xl">
+                            Do procesu náboru vhodných probandov boli zapojené
+                            médiá ako časopisy Život, Pravda, Bedeker zdravia,
+                            Rádio Regina, Rádio Slovensko a televízia TA3 a
+                            niektoré internetové portály, kde boli uvedené
+                            informácie pre širokú verejnosť o prebiehajúcom
+                            výskumnom projekte a možnosti zapojenia sa.
+                        </p>
+                    </article>
+                    <div
+                        class="space-y-10 *:block md:flex md:space-x-10 md:space-y-0"
+                    >
+                        <a
+                            href="https://drive.google.com/file/d/1uJ5RSJpaDNtauEXHBNhzu9OweUHsYvI9/view"
+                            target="_blank"
+                            class="box-content block overflow-hidden rounded-lg border-[20px] border-secondary leading-none hover:border-emphasis"
+                        >
+                            <img
+                                src="./img/media/ranajky.png"
+                                alt="Rozhovor o projekte EWA v živom vysielaní"
+                                class="block object-cover object-bottom md:h-[250px] md:w-[500px]"
+                            />
+                        </a>
+                        <a
+                            href="https://drive.google.com/file/d/1bk2wYBLz8NzD4WoPVMFz5Pi-BOEyHoja/view"
+                            target="_blank"
+                            class="box-content block overflow-hidden rounded-lg border-[20px] border-secondary leading-none hover:border-emphasis"
+                        >
+                            <img
+                                src="./img/media/clanok.png"
+                                alt="Článok o aplikácii projektu EWA v novinách"
+                                class="block object-cover object-bottom md:h-[250px] md:w-[500px]"
+                            />
+                        </a>
+                        <a
+                            href="https://drive.google.com/file/d/1cn_euK4Nxndi-J_OC6Jjcfc-E2T9sg-q/view"
+                            target="_blank"
+                            class="box-content block overflow-hidden rounded-lg border-[20px] border-secondary leading-none hover:border-emphasis"
+                        >
+                            <img
+                                src="./img/media/it_produkt_roka_2023.jpg"
+                                alt="IT produkt roka 2023"
+                                class="block object-cover object-bottom md:h-[250px] md:w-[500px]"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </main>
+
+            <footer role="contentinfo">
+                <div class="flex justify-center pb-4 pt-2">
+                    <div
+                        class="h-[10px] w-1/2 rounded-full bg-primary sm:w-[284px] md:h-[15px]"
+                    ></div>
+                </div>
+                <div class="w-full bg-light-gray py-4">
+                    <div
+                        class="grid items-center space-y-8 text-center md:grid-cols-2 md:space-y-0"
+                    >
+                        <div
+                            class="space-y-8 md:flex md:justify-around md:space-y-0"
+                        >
+                            <div>
+                                <a
+                                    href="/footer/gdpr.html"
+                                    class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >GDPR</a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="/footer/zasady.html"
+                                    class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black"
+                                    >Zásady ochrany osobných údajov</a
+                                >
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                href="/"
+                                class="rounded-lg bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-emphasis hover:text-black md:float-right md:mr-24"
+                                >Domov</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-6S21PS4SR8"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-6S21PS4SR8");
+        </script>
+    </body>
+</html>
